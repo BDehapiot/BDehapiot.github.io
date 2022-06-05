@@ -1,17 +1,12 @@
-.column {
+.column-left {
     float: left;
+    width: 33%;
+    padding: 0 10px 0 0;
   }
   
-  .left {
-    width: 25%;
+  .column-right {
+    float: right;
+    width: 66%;
+    padding: 0 10px 0 0;
   }
   
-  .right {
-    width: 75%;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
