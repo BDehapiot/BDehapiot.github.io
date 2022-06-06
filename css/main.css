@@ -1,79 +1,88 @@
-header {
-    display: block;
-  }
+ /* --- general --- */
 
-body {
-    background-color:whitesmoke;
-    max-width: 960px;
-    margin: auto;
-    border: 1px solid rgb(60,60,60); 
-}
+    header {
+        display: block;
+    }
 
-h1 {
-    color: rgb(60,60,60);
-}
+    body {
+        background-color:whitesmoke;
+        max-width: 960px;
+        min-width: 640px;
+        margin: auto;
+        border: 1px solid rgb(60,60,60); 
+    }
 
-p.main-text {
-    color: rgb(60,60,60);  
-}
+    h1 {
+        color: rgb(60,60,60);
+    }
 
-/* social icons*/
+    p.main-text {
+        color: rgb(60,60,60);  
+    }
 
-a.social {
-    display: block;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    min-height: 30px;
-    text-align: right;
-}
+/* --- social icons --- */
 
-/* column for main text*/
+    a.social {
+        display: block;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        text-align-last: right;
+    }
 
-.row {
-    display: flex;
-  }
-  
-.column {
-    float: left;
-    padding: 20px;
-}
+/* --- column for main text --- */
 
-.w-25 {
-    width: 25%;
-    border: 1px solid rgb(60,60,60); 
-  }
-  
-.w-75 {
-    width: 75%;
-    border: 1px solid rgb(60,60,60); 
-}
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    
+    .column {
+        float: left;
+        padding: 20px;
+    }
 
-/* nav bar */
+    .w-25 {
+        /* float: left; */
+        width: 25%;
+        border: 1px solid rgb(60,60,60); 
+        display: flex;
+        justify-content: right;
+    }
+    
+    .w-75 {
+        /* float: left; */
+        width: 75%;
+        border: 1px solid rgb(60,60,60); 
+    }
 
-ul.nav {
-    list-style-type: none;
-    background-color: rgb(60,60,60);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+/* --- nav bar --- */
 
-li.nav {
-    float: left;
-    background-color: rgb(60,60,60);
-}
-  
-a.nav {
-    display: block;
-    color: rgb(200, 200, 200);
-    padding: 10px 12px;
-    text-align: center;
-    text-decoration: none;
-}
+    ul.nav {
+        list-style-type: none;
+        background-color: rgb(60,60,60);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
-a.nav:hover {
-    background-color: rgb(40,40,40);
-    color: rgb(255, 255, 255);
-}
+    li.nav {
+        float: left;
+        background-color: rgb(60,60,60);
+    }
+    
+    a.nav {
+        display: block;
+        font-size: 18px;
+        color: rgb(200, 200, 200);
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.nav:hover {
+        background-color: rgb(40,40,40);
+        color: rgb(255, 255, 255);
+    }
