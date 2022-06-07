@@ -1,7 +1,11 @@
  /* --- general --- */
 
+    html {
+        font-family: Helvetica;
+    }
+
     header {
-        display: block;
+        display: inline;
     }
 
     body {
