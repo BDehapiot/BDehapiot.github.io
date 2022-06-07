@@ -1,0 +1,92 @@
+ /* --- general --- */
+
+    html {
+        font-family: Helvetica;
+    }
+
+    header {
+        display: inline;
+    }
+
+    body {
+        background-color:whitesmoke;
+        max-width: 960px;
+        min-width: 640px;
+        margin: auto;
+        border: 1px solid rgb(60,60,60); 
+    }
+
+    h1 {
+        color: rgb(60,60,60);
+    }
+
+    p.main-text {
+        color: rgb(60,60,60);  
+    }
+
+/* --- social icons --- */
+
+    a.social {
+        display: flex;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+        text-align-last: right;
+    }
+
+/* --- column for main text --- */
+
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    
+    .column {
+        float: left;
+        padding: 20px;
+    }
+
+    .w-25 {
+        width: 25%;
+        border: 1px solid rgb(60,60,60); 
+        display: flex;
+        justify-content: center;
+    }
+    
+    .w-75 {
+        width: 75%;
+        border: 1px solid rgb(60,60,60); 
+    }
+
+/* --- nav bar --- */
+
+    ul.nav {
+        list-style-type: none;
+        background-color: rgb(60,60,60);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li.nav {
+        float: left;
+        background-color: rgb(60,60,60);
+    }
+    
+    a.nav {
+        display: block;
+        font-size: 18px;
+        color: rgb(200, 200, 200);
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a.nav:hover {
+        background-color: rgb(40,40,40);
+        color: rgb(255, 255, 255);
+    }

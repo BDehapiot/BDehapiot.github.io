@@ -85,3 +85,40 @@ a.nav:hover {
     background-color: darkslategray;
     color: white;
 }
+
+/* --- main --- */
+
+.main-row {
+    display: flex;
+    align-items: center;   
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.main-left-column {
+    display: flex;
+    float: left;
+    width: 25%;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+.main-right-column {
+    display: flex;
+    float: right;
+    width: 75%;
+    /* padding: 10px; */
+}
+
+.main-picture {
+    /* display: flex; */
+    margin: auto;
+    width: 150px;
+    height: 210px;
+
+}
+
+.main-text {
+    text-align: justify;
+}
+
