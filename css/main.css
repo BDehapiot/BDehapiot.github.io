@@ -11,23 +11,34 @@ body {
 /* --- titles --- */
 
 h1 {
-    color: rgb(40, 100, 150);
+    color: rgb(55, 100, 150);
     font-size: 32px;
     font-weight: bold;
+    padding-top: 5px;
     margin: 0;
 }
 
 h2 {
-    color: rgb(40, 100, 150);
-    font-size: 20px;
+    color: rgb(55, 100, 150);
+    font-size: 18px;
     font-weight: bold;
+    padding-top: 5px;
     margin: 0;
 }
 
 h3 {
-    color: silver;
-    font-size: 18px;
+    color: black;
+    font-size: 16px;
     font-weight: normal;
+    padding-top: 5px;
+    margin: 0;
+}
+
+h4 {
+    color: rgb(55, 100, 150);
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 5px;
     margin: 0;
 }
 
@@ -54,14 +65,6 @@ header .left-column {
 header .right-column {
     float: right;
     width: 33%;
-}
-
-header h1 {
-
-}
-
-header h3 {
-    padding-top: 5px;
 }
 
 header .icon-row {
@@ -104,10 +107,76 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(40, 100, 150);
+    background-color: rgb(55, 100, 150);
     color: white;
+    border-radius: 10px;
 }
 
-/* --- main --- */
+/* --- div.main --- */
 
+div.main {    
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+div.main ul {
+    list-style-type: none; 
+    margin: 0;
+}
+
+div.main ul.dotted {
+    list-style-type: disc; 
+    margin: 0;
+}
+
+div.main li {
+}
+
+div.main p {
+    color: dimgray;
+    font-size: 14px;
+    text-align: justify;
+}
+
+div.main figure.img-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+div.main figcaption.img-left {
+    padding-left: 20px;
+}
+
+div.main figure.img-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+div.main figcaption.img-right {
+    padding-right: 20px;
+}
+
+div.main h2.section{
+    background-color: rgb(55, 100, 150);
+    color: white;  
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
