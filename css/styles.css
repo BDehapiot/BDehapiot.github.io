@@ -12,7 +12,7 @@
 }
 
 /* --- medium --- */
-@media only screen and (min-width: 641px) and (max-width: 960px) {
+@media only screen and (min-width: 641px) {
 
     html { 
         font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +22,7 @@
 }
 
 /* --- large --- */
-@media only screen and (min-width: 961px) {
+/* @media only screen and (min-width: 961px) {
     
     html { 
         font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +31,7 @@
         margin: auto;
     }
 
-}
+} */
 
 /* --- xlarge --- */
 /* @media only screen and (min-width: 1281px) {
@@ -125,6 +125,7 @@ header .icon {
 
 nav {
     background-color: gray;
+    border-radius: 10px;
 }
 
 
@@ -151,70 +152,114 @@ nav a {
 nav a:hover {
     background-color: rgb(55, 100, 150);
     color: white;
+    border-radius: 10px;
 }
 
 /* #endregion */
 
-/* #region - main rules */
+/* #region - few-words rules */
 
-div.main {
+div.few-words {
     padding: 1rem;
     max-width: 960px;
+    box-sizing: border-box;
     margin: auto;
+    border: solid;
 }
 
-div.main img{
+div.few-words p{
+    text-align: justify;
+}
+
+div.few-words img[alt*="portrait"]{
     width: 10rem;
     margin: auto;
 }
 
-div.main p{
-    text-align: justify;
+    /* --- small --- */
+    @media only screen and (max-width: 640px) {
+
+        div.few-words .row {
+            display: block;
+        }
+        
+        div.few-words .column-img {
+            display: flex;
+            width: 100%;
+            padding-bottom: 0.5rem;
+            margin: auto;
+        }
+        
+        div.few-words .column-txt {
+            float: flex;
+            width: 100%;
+            padding-top: 0.5rem;    
+        }
+
+    }
+
+    /* --- medium + --- */
+    @media only screen and (min-width: 641px) {
+
+        div.few-words .row {
+            display: flex;
+            align-items: center;
+        }
+        
+        div.few-words .column-img {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            padding-right: 0.5rem;
+        }
+        
+        div.few-words .column-txt {
+            float: right;
+            width: 75%;    
+            padding-left: 0.5rem;
+        }
+
+    }
+
+/* #endregion */
+
+/* #region - pro-exp rules */
+
+div.pro-exp {
+    max-width: 960px;
+    margin: auto;
 }
 
-/* --- small --- */
-@media only screen and (max-width: 640px) {
-
-    div.main .row {
-        display: block;
-    }
-    
-    div.main .column-left {
-        display: flex;
-        width: 33%;
-        padding-bottom: 0.5rem;
-        margin: auto;
-    }
-    
-    div.main .column-right {
-        float: flex;
-        width: 100%;
-        padding-top: 0.5rem;    
-    }
-
+div.pro-exp ul {
+    list-style-type: none;   
+    padding-inline-start: 0;
+    margin: 0;
 }
 
-/* --- medium + --- */
-@media only screen and (min-width: 641px) {
-
-    div.main .row {
-        display: flex;
-        align-items: center;
-    }
-    
-    div.main .column-left {
-        display: flex;
-        align-items: center;
-        width: 25%;
-        padding-right: 0.5rem;
-    }
-    
-    div.main .column-right {
-        float: right;
-        width: 75%;    
-        padding-left: 0.5rem;
-    }
-
+div.pro-exp li {
+    /* padding-top: 0.5rem; */
+    padding-bottom: 1rem;
 }
+
+div.pro-exp h2 {
+    background-color: rgb(55, 100, 150);
+    color: white;  
+    font-weight: normal;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+    /* --- small --- */
+    @media only screen and (max-width: 640px) {
+
+    }
+
+    /* --- medium + --- */
+    @media only screen and (min-width: 641px) {
+
+    }
 
 /* #endregion */
