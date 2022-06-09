@@ -251,15 +251,29 @@ div.main .collapsible-title {
     margin: 0;
 }
 
+div.main .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    padding: 0;
+}
+  
+div.main .active:after {
+    content: "\2212";
+}
+
 .active, div.main .collapsible:hover {
-    background-color: #555;
+    background-color: rgb(55, 100, 150);
 }
 
 div.main .content {
-    display: none;
+    padding: 0 18px;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
-
 
     /* --- small --- */
     @media only screen and (max-width: 640px) {
