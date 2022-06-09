@@ -2,10 +2,77 @@ html {
     font-size: 16px;
 }
 
-@media only screen and (min-width: 480px) {
-	
+@media only screen and (max-width: 600px) {
+
     html { 
-        font-size: 100%;
+        font-size: 0.75rem;
+    }
+
+    /* --- header --- */
+
+    header .row {
+        display: flex;
+        align-items: center;   
+    }
+
+    header .column-left {
+        float: left;
+        width: 66%;
+    }
+    
+    header .column-right {
+        float: right;
+        width: 33%;
+    }
+
+    header .row-icon {
+        display: flex;
+        float: right;   
+    }
+
+    header .icon {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 0.25rem;
     }
 
 }
+
+
+@media only screen and (min-width: 601px) {
+    
+    html { 
+        font-size: 1rem;
+    }
+
+    /* --- header --- */
+
+    header .row {
+        display: flex;
+        align-items: center;   
+    }
+    
+    header .column-left {
+        float: left;
+        width: 66%;
+    }
+    
+    header .column-right {
+        float: right;
+        width: 33%;
+    }
+
+    header .row-icon {
+        display: flex;
+        float: right;
+    }
+
+    header .icon {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 0.25rem;
+    }
+
+  }
