@@ -1,15 +1,28 @@
-/* --- mobile --- */
-@media only screen and (max-width: 600px) {
+/* #region - screen width modifers */
+
+/* --- small --- */
+@media only screen and (max-width: 640px) {
 
     html { 
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
+        min-width: 360px;
     }
 
 }
 
-/* --- desktop --- */
-@media only screen and (min-width: 601px) {
+/* --- medium --- */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+
+    html { 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+}
+
+/* --- large --- */
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
     
     html { 
         font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +31,21 @@
 
 }
 
-/* --- general --- */
+/* --- xlarge --- */
+@media only screen and (min-width: 1281px) {
+    
+    html { 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        max-width: 1280px;
+        margin: auto;
+    }
+
+}
+
+/* #endregion */
+
+/* #region - general rules */
 
 html {
     background-color: white;
@@ -30,11 +57,20 @@ body{
     padding: 0.5rem;
 }
 
-/* --- title --- */
+/* #endregion */
+
+/* #region - title rules */
 
 h1 {
     color: rgb(55, 100, 150);
     font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(55, 100, 150);
+    font-size: 1rem;
     font-weight: bold;
     margin: 0;
 }
@@ -46,11 +82,12 @@ h3 {
     margin: 0;
 }
 
-/* --- header --- */
+/* #endregion */
+
+/* #region - header rules */
 
 header {
-    background-color: whitesmoke;
-    padding-bottom: 0.5rem;
+    padding: 1rem;
 }
 
 header .row {
@@ -60,12 +97,12 @@ header .row {
 
 header .column-left {
     float: left;
-    width: 66%;
+    width: 66.66%;
 }
 
 header .column-right {
     float: right;
-    width: 33%;
+    width: 33.33%;
 }
 
 header .row-icon {
@@ -80,7 +117,9 @@ header .icon {
     padding-left: 0.25rem;
 }
 
-/* --- nav --- */
+/* #endregion */
+
+/* #region - nav rules */
 
 nav {
     background-color: gray;
@@ -90,7 +129,7 @@ nav {
 nav ul {
     list-style-type: none;   
     overflow: hidden;
-    padding-inline-start: 0;
+    padding-inline-start: 0.5rem;
     margin: 0;
 }
 
@@ -111,3 +150,41 @@ nav a:hover {
     background-color: rgb(55, 100, 150);
     color: white;
 }
+
+/* #endregion */
+
+/* #region - main rules */
+
+div.main {
+    padding: 1rem;
+    max-width: 960px;
+    margin: auto;
+}
+
+div.main .row {
+    display: flex;
+    align-items: center;
+}
+
+
+div.main .column-left {
+    float: left;
+    width: 25%;
+    padding-right: 0.5rem;
+}
+
+div.main .column-right {
+    float: right;
+    width: 75%;    
+    padding-left: 0.5rem;
+}
+
+div.main img{
+    width: 100%;
+}
+
+div.main p{
+    text-align: justify;
+}
+
+/* #endregion */
