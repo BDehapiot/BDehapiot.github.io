@@ -63,6 +63,7 @@ body{
 
 p {
     color: rgb(80, 80, 80);
+    text-align: justify;
 }
 
 /* #endregion */
@@ -87,6 +88,14 @@ h3 {
     color: black;
     font-size: 1rem;
     font-weight: normal;
+    margin: 0;
+}
+
+h4 {
+    color: rgb(55, 100, 150);
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
     margin: 0;
 }
 
@@ -174,7 +183,6 @@ div.few-words {
 }
 
 div.few-words p{
-    text-align: justify;
     margin-block-end: 0;
 }
 
@@ -237,40 +245,29 @@ div.main {
     margin: auto;
 }
 
-.collapsible {
-    background-color: gray;
-    color: white;
-    font-size: 1rem;
-    text-align: left;
-    text-indent: 0.5rem;
-    width: 100%;  
-    border-radius: 10px;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+div.main img[alt*="CENTURI-hlogo"]{
+    width: 10rem;
+    margin: auto;
 }
 
-.collapsible:after {
-    content: '\002B';
-    float: right;
-    padding-right: 0.5rem;
+div.main img[alt*="AMU-logo"]{
+    width: 10rem;
+    margin: auto;
 }
 
-.active:after {
-    content: "\2212";
-    float: right;
+div.pro-exp ul {
+    list-style-type: disc;
+    padding-inline-start: 3rem;
+    /* padding: 0; */
 }
 
-.active, .collapsible:hover {
-    background-color: rgb(55, 100, 150);
+div.pro-exp li {
+    list-style-type: disc;
+    padding: 0;
 }
 
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease-out;
+div.pro-exp p {
+    margin: 0.25rem;
 }
 
     /* --- small --- */
@@ -280,7 +277,64 @@ div.main {
 
     /* --- medium + --- */
     @media only screen and (min-width: 641px) {
+        
+        div.main .row {
+            display: flex;
+            align-items: center;
+        }
 
+        div.main .column-txt {
+            float: left;
+            width: 75%;    
+            padding-right: 0.5rem;
+        }
+
+        div.main .column-img {
+            display: block;
+            align-items: center;
+            width: 25%;
+            padding-left: 0.5rem;
+        }
+
+    }
+
+    /* --- collapsible --- */
+
+    .collapsible {
+        background-color: gray;
+        color: white;
+        font-size: 1rem;
+        text-align: left;
+        text-indent: 0.5rem;
+        width: 100%;  
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .collapsible:after {
+        content: '\002B';
+        float: right;
+        padding-right: 0.5rem;
+    }
+
+    .active:after {
+        content: "\2212";
+        float: right;
+    }
+
+    .active, .collapsible:hover {
+        background-color: rgb(55, 100, 150);
+    }
+
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.25s ease-out;
+        padding: 1em;
     }
 
 /* #endregion */
