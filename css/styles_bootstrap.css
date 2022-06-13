@@ -1,0 +1,16 @@
+p {
+    font-size: calc(0.5rem + 1vw);
+    text-align: justify;
+    color: rgb(80, 80, 80);
+}
+
+h1 {
+    font-size: calc(2rem + 1.5vw);
+    color: rgb(55, 100, 150);
+}
+
+h3 {
+    font-size: calc(0.75rem + 1vw);
+    font-weight: normal;
+    color: black;
+}
