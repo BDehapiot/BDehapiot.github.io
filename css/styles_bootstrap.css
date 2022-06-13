@@ -1,16 +1,36 @@
-p {
-    font-size: calc(0.5rem + 1vw);
-    text-align: justify;
-    color: rgb(80, 80, 80);
+h1 {
+    font-size: calc(1.5rem + 1.5vw);
+    color: rgb(55, 100, 150);
 }
 
-h1 {
-    font-size: calc(2rem + 1.5vw);
+h2 {
+    font-size: calc(0.75rem + 0.75vw);
     color: rgb(55, 100, 150);
 }
 
 h3 {
-    font-size: calc(0.75rem + 1vw);
+    font-size: calc(0.75rem + 0.75vw);
     font-weight: normal;
     color: black;
+}
+
+h4 {
+    font-size: calc(0.75rem + 0.5vw);
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(55, 100, 150)
+}
+
+.inline-title-left {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.inline-title-right {
+    float: right;
+}
+
+p {
+    font-size: calc(0.5rem + 0.5vw);
+    text-align: justify;
 }
