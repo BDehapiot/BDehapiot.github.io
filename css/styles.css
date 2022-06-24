@@ -98,8 +98,8 @@ header .row-icons {
 
 header .icons {
     display: flex;
-    width: calc(1.25rem + 1.25vw);
-    height: calc(1.25rem + 1.25vw);
+    width: 2rem;
+    height: 2rem;
     padding-left: 0.25rem;
 }
 
@@ -109,9 +109,8 @@ header .icons {
 
 nav {
     background-color: gainsboro;
-    border-radius: 10px;
-    margin-top: 1rem;
     margin-bottom: 1rem;
+    border: 0.05rem solid black;
 }
 
 nav ul {
@@ -129,7 +128,7 @@ nav a {
     display: block;
     background-color: gainsboro;
     color: black;
-    font-size: calc(0.75rem + 0.75vw);
+    font-size: 1rem;
     text-decoration: none;
     padding: 0.5rem;
 }
@@ -137,7 +136,6 @@ nav a {
 nav a:hover {
     background-color: rgb(55, 100, 150);
     color: white;
-    border-radius: 10px;
 }
 
 /* #endregion */
