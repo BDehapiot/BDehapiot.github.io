@@ -207,19 +207,19 @@ div.few-words img[alt*="portrait"]{
 
 /* #endregion */
 
-/* #region - main-content rules */
+/* #region - tabs rules */
 
-.tab, .tab * {
+.tabs, .tabs * {
     max-width: 960px;
     box-sizing: border-box;
     margin: auto;
 }
 
-.tab input { 
+.tabs input { 
     display: none; 
 }
 
-.tab label {
+.tabs label {
     display: block;
     position: relative;
     background-color: gainsboro;
@@ -230,12 +230,12 @@ div.few-words img[alt*="portrait"]{
     cursor: pointer;
 }
 
-.tab label:hover {
+.tabs label:hover {
     background-color: rgb(55, 100, 150);
     color: white;
 }
 
-.tab label::after {
+.tabs label::after {
     display: block;  
     content: "\25b6";
     position: absolute;
@@ -243,22 +243,22 @@ div.few-words img[alt*="portrait"]{
     transition: all 0.3s;
 }
 
-.tab input:checked ~ label::after { 
+.tabs input:checked ~ label::after { 
     transform: rotate(90deg); 
 }
 
-.tab input:checked + label { 
+.tabs input:checked + label { 
     background-color: rgb(55, 100, 150);
     color: white;
 }
 
-.tab .content {
+.tabs .content {
     overflow: hidden;
     transition: max-height 0.0s;
     max-height: 0;
 }
 
-.tab input:checked ~ .content { 
+.tabs input:checked ~ .content { 
     max-height: 100vh; 
     border-bottom: .05rem solid black;
     border-left: .05rem solid black;
@@ -266,48 +266,102 @@ div.few-words img[alt*="portrait"]{
     padding: 1rem;
 }
 
-.tab h2.inline-title-left{
-    display:inline-block;
-    text-align: left;
-    margin: 0 0 0.5rem;
-}
+/* #endregion */
 
-.tab h3{
-    margin: 0 0 0.25rem;
-}
+/* #region - tabs content rules */
 
-.tab h4.inline-title-right{
-    float: right;
-}
+    .content h2.inline-left{
+        display:inline-block;
+        text-align: left;
+        margin: 0 0 0.5rem;
+    }
 
-.tab p{
-    margin: 0 0 0.25rem;
-}
+    .content h4.inline-right{
+        float: right;
+    }
 
-.tab hr{
-    margin: 1rem 0;
-}
+    .content img.inline-right{
+        float: right;
+    }
 
-.tab ul{
-    padding-inline-start: 2rem;
-    margin: 1rem 0;
-}
+    .content h3{
+        margin: 0 0 0.25rem;
+    }
 
-.tab li{
-    margin: 0.5rem 0;
-}
+    .content p{
+        margin: 0 0 0.25rem;
+    }
 
-.tab ul h4{
-    margin: 0.25rem 0;
-}
+    .content hr{
+        margin: 1rem 0;
+    }
 
-.tab ul.inline-ul{
-    display:inline-block;
-    float: left;
-}
+    .content ul{
+        padding-inline-start: 2rem;
+        margin: 1rem 0;
+    }
 
-.tab img.inline-ul{
-    float: right;
-}
+    .content li{
+        margin: 0.5rem 0;
+    }
+
+    .content ul h4{
+        margin: 0.25rem 0;
+    }
+
+    .content img[alt*="CENTURI"]{
+        width: 10rem;
+        margin: auto;
+    }
+
+    .content img[alt*="AMU"]{
+        width: 8rem;
+        margin: auto;
+    }
+
+    /* --- small --- */
+    @media only screen and (max-width: 640px) {
+
+        div.few-words .row {
+            display: block;
+        }
+        
+        div.few-words .column-img {
+            display: flex;
+            width: 100%;
+            padding-bottom: 0.5rem;
+            margin: auto;
+        }
+        
+        div.few-words .column-txt {
+            float: flex;
+            width: 100%;
+            padding-top: 0.5rem;    
+        }
+
+    }
+
+    /* --- medium + --- */
+    @media only screen and (min-width: 641px) {
+
+        div.few-words .row {
+            display: flex;
+            align-items: center;
+        }
+        
+        div.few-words .column-img {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            padding-right: 0.5rem;
+        }
+        
+        div.few-words .column-txt {
+            float: right;
+            width: 75%;    
+            padding-left: 0.5rem;
+        }
+    
+        }
 
 /* #endregion */
