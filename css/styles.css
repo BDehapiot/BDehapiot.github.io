@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: rgb(55, 100, 150);
     margin: 0 0 0.5rem;
@@ -256,7 +256,6 @@ div.few-words img[alt*="portrait"]{
     overflow: hidden;
     transition: max-height 0.0s;
     max-height: 0;
-    
 }
 
 .tab input:checked ~ .content { 
@@ -264,7 +263,29 @@ div.few-words img[alt*="portrait"]{
     border-bottom: .05rem solid black;
     border-left: .05rem solid black;
     border-right: .05rem solid black;
-    padding: 0.5rem;
+    padding: 1rem;
+}
+
+.tab h2.inline-title-left{
+    display:inline-block;
+    text-align: left;
+    margin: 0 0 0.5rem;
+}
+
+.tab h4.inline-title-right{
+    float: right;
+}
+
+.tab h3{
+    margin: 0 0 0.25rem;
+}
+
+.tab p{
+    margin: 0 0 0.25rem;
+}
+
+.tab hr{
+    margin: 1rem 0;
 }
 
 /* #endregion */
