@@ -213,7 +213,6 @@ div.few-words img[alt*="portrait"]{
     max-width: 960px;
     box-sizing: border-box;
     margin: auto;
-    background-color: rgb(245, 245, 245);
 }
 
 .tabs input { 
@@ -281,8 +280,12 @@ div.few-words img[alt*="portrait"]{
         float: right;
     }
 
+    .content img.inline-right{
+        float: right;
+    }
+
     .content h3{
-        margin: 0 0 0.5rem;
+        margin: 0 0 0.25rem;
     }
 
     .content p{
@@ -290,7 +293,7 @@ div.few-words img[alt*="portrait"]{
     }
 
     .content hr{
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
 
     .content ul{
@@ -307,14 +310,77 @@ div.few-words img[alt*="portrait"]{
         margin: 0.25rem 0;
     }
 
-    .content img{
-        display: block;
-        height: 3rem;
-        margin: 1rem 0 0 auto;
+    .content img[alt*="CENTURI"]{
+        width: 10rem;
+        padding: 0.5rem;
+        margin: auto;
     }
 
-    .content img[alt*="CENTURI"]{
-        height: 2.5rem;
+    .content img[alt*="AMU"]{
+        width: 10rem;
+        padding: 0.5rem;
+        margin: auto;
     }
+
+        /* --- small --- */
+        @media only screen and (max-width: 640px) {
+
+            div.few-words .row {
+                display: block;
+            }
+            
+            div.few-words .column-img {
+                display: flex;
+                width: 100%;
+                padding-bottom: 0.5rem;
+                margin: auto;
+            }
+            
+            div.few-words .column-txt {
+                float: flex;
+                width: 100%;
+                padding-top: 0.5rem;    
+            }
+    
+        }
+    
+        /* --- medium + --- */
+        @media only screen and (min-width: 641px) {
+    
+            div.few-words .row {
+                display: flex;
+                align-items: center;
+            }
+            
+            div.few-words .column-img {
+                display: flex;
+                align-items: center;
+                width: 25%;
+                padding-right: 0.5rem;
+            }
+            
+            div.few-words .column-txt {
+                float: right;
+                width: 75%;    
+                padding-left: 0.5rem;
+            }
+    
+        }
+
+        .content .row{
+            display: flex;
+        }
+    
+        .content .column-list{
+            display: flex;
+            width: 66.66%;
+        }
+    
+        .content .column-img{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33.33%;
+        }
 
 /* #endregion */
