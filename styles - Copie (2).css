@@ -309,19 +309,6 @@ div.few-words img[alt*="portrait"]{
         margin: 0.25rem 0;
     }
 
-    .content .row{
-        display: flex;
-        align-items: center;
-    }
-
-    /* .content .container-list{
-        display: inline-flex;
-    } */
-
-    .content .container-img{
-        display: inline-block;
-    }
-
     .content img[alt*="CENTURI"]{
         display: inline-flex;
         width: 10rem;
@@ -333,5 +320,50 @@ div.few-words img[alt*="portrait"]{
         width: 8rem;
         margin: auto;
     }
+
+    /* --- small --- */
+    @media only screen and (max-width: 640px) {
+
+        .content .row {
+            display: block;
+        }
+        
+        .content .column-img {
+            display: flex;
+            width: 100%;
+            padding-bottom: 0.5rem;
+            margin: auto;
+        }
+        
+        .content .column-txt {
+            float: flex;
+            width: 100%;
+            padding-top: 0.5rem;    
+        }
+
+    }
+
+    /* --- medium + --- */
+    @media only screen and (min-width: 641px) {
+
+        .content .row {
+            display: flex;
+            align-items: center;
+        }
+        
+        .content .column-img {
+            display: flex;
+            align-items: center;
+            width: 40%;
+            padding-right: 0.5rem;
+        }
+        
+        .content .column-txt {
+            float: left;
+            width: 60%;    
+            padding-left: 0.5rem;
+        }
+    
+        }
 
 /* #endregion */
