@@ -48,12 +48,7 @@ h2 {
     margin: 0 0 0.5rem;
 }
 
-h3 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: black;
-    margin: 0 0 0.5rem;
-}
+
 
 h4 {
     font-size: 0.9rem;
@@ -274,7 +269,7 @@ div.few-words img[alt*="portrait"]{
     border-right: .05rem solid black;
     padding: 1rem;
 }
-
+ 
 /* #endregion */
 
 /* #region - tabs content rules */

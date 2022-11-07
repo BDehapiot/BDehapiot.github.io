@@ -1,0 +1,8 @@
+/* #region - nav rules */
+
+nav a[href="projects.html"] {
+    background-color: rgb(128, 128, 128);
+    color: white;
+}
+
+/* #endregion */

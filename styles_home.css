@@ -1,61 +1,11 @@
-/* #region - general rules */
+/* #region - nav rules */
 
-h1 {
-    font-size: calc(1.5rem + 1.5vw);
-    color: rgb(55, 100, 150);
-    margin: 0 0 0.75rem;
-}
-
-h2 {
-    font-size: calc(0.75rem + 0.75vw);
-    color: rgb(55, 100, 150);
-    margin: 0 0 0.5rem;
-}
-
-h3 {
-    font-size: calc(0.75rem + 0.75vw);
-    font-weight: normal;
-    color: black;
-    margin: 0 0 0.25rem;
-}
-
-h4 {
-    font-size: calc(0.75rem + 0.75vw);
-    font-weight: normal;
-    font-style: italic;
-    color: rgb(55, 100, 150);
-    margin: 0 0 0.25rem;
-}
-
-.inline-title-left {
-    display: inline-block;
-    vertical-align: middle; 
-}
-
-.inline-title-right {
-    float: right;
-}
-
-p {
-    font-size: calc(0.5rem + 0.5vw);
-    text-align: justify;
+nav a[href="home.html"] {
+    background-color: rgb(128, 128, 128);
+    color: white;
 }
 
 /* #endregion */
-
-/* #region - nav */
-
-.nav-tabs{
-    font-size: calc(0.75rem + 0.75vw);
-}
-
-/* #endregion */
-
-img[alt*="portrait"] {
-    display: block;
-    width: 10rem;
-    margin: auto;
-}
 
 /* #region - few-words rules */
 
@@ -74,6 +24,7 @@ div.few-words p{
 div.few-words img[alt*="portrait"]{
     width: 10rem;
     margin: auto;
+    
 }
 
     /* --- small --- */
