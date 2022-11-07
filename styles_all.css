@@ -40,11 +40,40 @@ h1 {
     color: rgb(55, 100, 150);
 }
 
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(40, 40, 40)
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: rgb(40, 40, 40)
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(55, 100, 150);
+}
+
 p {
     font-size: 0.9rem;
     color: rgb(80, 80, 80);
     text-align: justify;
     line-height: 1.25rem;
+}
+
+hr.hr1 {
+    border: none;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+hr.hr2 {
+    border: none;
+    border-top: 1px dotted rgb(160, 160, 160);
 }
 
 /* #endregion */
@@ -59,7 +88,7 @@ header h1 {
 header h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: black;
+    color: rgb(40, 40, 40);
     margin: 0rem auto 1rem 0.5rem;
 }
 
@@ -92,7 +121,7 @@ header .icons {
 
 nav {
     background-color: gainsboro;
-    border: 0.05rem solid black;
+    border: 0.05rem solid rgb(40, 40, 40);
 }
 
 nav ul {
@@ -110,7 +139,7 @@ nav li {
 nav a {
     display: block;
     background-color: gainsboro;
-    color: black;
+    color: rgb(40, 40, 40);
     font-size: 1rem;
     text-decoration: none;
     padding: 0.5rem;
