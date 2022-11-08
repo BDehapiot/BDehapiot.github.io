@@ -1,35 +1,98 @@
-/* #region - content rules */
+/* #region - general rules */
 
-div.content {
-    padding: 1rem;
+h2.inline-left{
+    display:inline-block;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0.25rem auto;
+}
+
+h3 {
+    padding-left: 2rem;
+}
+
+h4 {
+    padding-left: 1rem;
+}
+
+h4.inline-right{
+    float: right;
+    margin: 0.25rem auto;
+}
+
+p {
+    padding-left: 2rem;
+}
+
+p.few-words{
+    padding-left: 0rem;
+}
+
+hr.hr1 {
+    margin-bottom: 1rem;
+}
+
+hr.hr2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* #region - main rules */
+
+div.main {
+    padding: 1rem 0.5rem 0rem 0.5rem;
     max-width: 960px;
     box-sizing: border-box;
     margin: auto;
 }
 
-div.content img[alt*="portrait"]{
+div.main img[alt*="portrait"]{
     width: 10rem;
-    margin: auto;   
+    margin: auto; 
+}
+
+div.main img[alt*="CENTURI"]{
+    width: 9rem;
+    margin: auto;
+}
+
+div.main img[alt*="IBDM"]{
+    width: 8rem;
+    margin: auto;
+}
+
+div.main img[alt*="IGDR"]{
+    width: 8rem;
+    margin: auto;
+}
+
+div.main img[alt*="IPR"]{
+    width: 7rem;
+    margin: auto;
 }
 
     /* --- small --- */
     @media only screen and (max-width: 640px) {
 
-        div.content .row {
+        div.main .row {
             display: block;
         }
-        
-        div.content .column-img {
-            display: flex;
+ 
+        div.main .column-img.portrait {
             width: 100%;
-            padding-bottom: 0.5rem;
+            text-align: center;
+            margin: auto;
+        }
+
+        div.main .column-img {
+            width: 100%;
+            text-align: right;
             margin: auto;
         }
         
-        div.content .column-txt {
+        div.main .column-txt {
             float: flex;
             width: 100%;
-            padding-top: 0.5rem;    
         }
 
     }
@@ -37,22 +100,20 @@ div.content img[alt*="portrait"]{
     /* --- medium + --- */
     @media only screen and (min-width: 641px) {
 
-        div.content .row {
+        div.main .row {
             display: flex;
             align-items: center;
         }
         
-        div.content .column-img {
+        div.main .column-img {
             display: flex;
             align-items: center;
             width: 25%;
-            padding-right: 0.5rem;
         }
         
-        div.content .column-txt {
+        div.main .column-txt {
             float: right;
             width: 75%;    
-            padding-left: 0.5rem;
         }
 
     }
