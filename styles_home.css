@@ -78,18 +78,18 @@ div.main img[alt*="IPR"]{
             display: block;
         }
  
-        div.main .column-img.portrait {
-            width: 100%;
-            text-align: center;
-            margin: auto;
-        }
-
         div.main .column-img {
             width: 100%;
             text-align: right;
             margin: auto;
         }
         
+        div.main .column-img.portrait {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+
         div.main .column-txt {
             float: flex;
             width: 100%;
@@ -104,6 +104,11 @@ div.main img[alt*="IPR"]{
             display: flex;
             align-items: center;
         }
+
+        div.main .row.expertise {
+            display: flex;
+            align-items: baseline;
+        }
         
         div.main .column-img {
             display: flex;
@@ -114,6 +119,11 @@ div.main img[alt*="IPR"]{
         div.main .column-txt {
             float: right;
             width: 75%;    
+        }
+
+        div.main .column-txt.expertise {
+            float: left;
+            width: 33%;    
         }
 
     }
