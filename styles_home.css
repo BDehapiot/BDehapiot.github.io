@@ -28,6 +28,10 @@ p.few-words{
     padding-left: 0rem;
 }
 
+p.expertise{
+    padding-left: 3rem;
+}
+
 hr.hr1 {
     margin-bottom: 1rem;
 }
