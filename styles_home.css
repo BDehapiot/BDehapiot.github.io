@@ -50,30 +50,52 @@ div.main {
     margin: auto;
 }
 
-div.main img[alt*="portrait"]{
-    width: 10rem;
-    margin: auto; 
-}
+/* Image portrait */
 
-div.main img[alt*="CENTURI"]{
-    width: 9rem;
-    margin: auto;
-}
+    div.main img[alt*="portrait"]{
+        width: 10rem;
+        margin: auto; 
+    }
 
-div.main img[alt*="IBDM"]{
-    width: 8rem;
-    margin: auto;
-}
+/* Image "Expertise" */
 
-div.main img[alt*="IGDR"]{
-    width: 8rem;
-    margin: auto;
-}
+    div.main img[alt*="Python_lite"]{
+        width: 5rem;
+        margin: auto;
+    }
 
-div.main img[alt*="IPR"]{
-    width: 7rem;
-    margin: auto;
-}
+    div.main img[alt*="Matlab"]{
+        width: 2rem;
+        margin: auto;
+    }
+
+    div.main img[alt*="ImageJ"]{
+        width: 2rem;
+        margin: auto;
+    }
+
+
+/* Image "Professional experience" */
+
+    div.main img[alt*="CENTURI"]{
+        width: 9rem;
+        margin: auto;
+    }
+
+    div.main img[alt*="IBDM"]{
+        width: 8rem;
+        margin: auto;
+    }
+
+    div.main img[alt*="IGDR"]{
+        width: 8rem;
+        margin: auto;
+    }
+
+    div.main img[alt*="IPR"]{
+        width: 7rem;
+        margin: auto;
+    }
 
     /* --- small --- */
     @media only screen and (max-width: 640px) {
