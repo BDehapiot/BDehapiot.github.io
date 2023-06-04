@@ -59,21 +59,26 @@ div.main {
 
 /* Image "Expertise" */
 
-    div.main img[alt*="Python_lite"]{
-        width: 5rem;
+    div.main img[alt*="coding-languages"]{
+        height: 1.5rem;
         margin: auto;
+        display: flex;
+        float: right;
     }
 
-    div.main img[alt*="Matlab"]{
-        width: 2rem;
+    div.main img[alt*="coding-tools"]{
+        height: 1.5rem;
         margin: auto;
+        display: flex;
+        float: right;
     }
 
-    div.main img[alt*="ImageJ"]{
-        width: 2rem;
+    div.main img[alt*="python-libraries"]{
+        height: 3rem;
         margin: auto;
+        display: flex;
+        float: right;
     }
-
 
 /* Image "Professional experience" */
 
