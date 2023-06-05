@@ -59,22 +59,9 @@ div.main {
 
 /* Image "Expertise" */
 
-    div.main img[alt*="coding-languages"]{
+    div.row.expertise img{
         height: 1.5rem;
-        margin: auto;
-        display: flex;
-        float: right;
-    }
-
-    div.main img[alt*="coding-tools"]{
-        height: 1.5rem;
-        margin: auto;
-        display: flex;
-        float: right;
-    }
-
-    div.main img[alt*="python-libraries"]{
-        height: 3rem;
+        padding: 0.25rem;
         margin: auto;
         display: flex;
         float: right;
