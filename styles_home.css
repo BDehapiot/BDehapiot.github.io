@@ -1,62 +1,78 @@
 /* #region - general rules */
 
-h2.inline-left{
-    display:inline-block;
-    text-align: left;
-    padding-left: 1rem;
-    margin: 0.25rem auto;
-}
+/* Titles */
 
-h3 {
-    padding-left: 2rem;
-}
+    h3 {
+        padding-left: 2rem;
+    }
 
-h4 {
-    padding-left: 3rem;
-}
+    h4 {
+        padding-left: 3rem;
+    }
 
-h5.inline-right{
-    float: right;
-    margin: 0.25rem auto;
-}
+    h2.inline-left{
+        display:inline-block;
+        text-align: left;
+        padding-left: 1rem;
+        margin: 0.25rem auto;
+    }
 
-p {
-    padding-left: 2rem;
-}
+    h4.inline-right{
+        float: right;
+        margin: 0.25rem auto;
+        font-style: italic;
+    }
 
-p.few-words{
-    padding-left: 0rem;
-}
+    h4.inline-left{
+        display:inline-block;
+        text-align: left;
+    }
 
-p.expertise{
-    padding-left: 3rem;
-}
+/* Paragraphes */
 
-hr.hr1 {
-    margin-bottom: 1rem;
-}
+    p {
+        padding-left: 2rem;
+    }
 
-hr.hr2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+    .few-words p{
+        padding-left: 0rem;
+    }
 
-hr.hr3 {
-    margin-left: 3rem;
-}
+    .expertise p{
+        padding-left: 3rem;
+        text-align: left;
+    }
+
+/* Lines */
+
+    hr.hr1 {
+        margin-bottom: 1rem;
+    }
+
+    .expertise hr.hr2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+
+    .experiences hr.hr2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
 
 /* #region - main rules */
 
-div.main {
-    padding: 1rem 0.5rem 0rem 0.5rem;
-    max-width: 960px;
-    box-sizing: border-box;
-    margin: auto;
-}
+    .main {
+        padding: 1rem 0.5rem 0rem 0.5rem;
+        max-width: 960px;
+        box-sizing: border-box;
+        margin: auto;
+    }
 
 /* Image portrait */
 
-    div.main img[alt*="portrait"]{
+    img[alt*="portrait"]{
         width: 10rem;
         margin: auto; 
     }
@@ -64,34 +80,37 @@ div.main {
 /* Image "Expertise" */
 
     .expertise-icons{
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 3rem;
+        float:right;
     }
 
     .expertise-icons img {
         height: 1.5rem;
-        margin-right: 0.5rem;
+        margin-right: 0.25rem;
     }
 
 /* Image "Professional experience" */
 
-    div.main img[alt*="CENTURI"]{
+    img[alt*="ETH"]{
         width: 9rem;
         margin: auto;
     }
 
-    div.main img[alt*="IBDM"]{
+    img[alt*="CENTURI"]{
+        width: 9rem;
+        margin: auto;
+    }
+
+    img[alt*="IBDM"]{
         width: 8rem;
         margin: auto;
     }
 
-    div.main img[alt*="IGDR"]{
+    img[alt*="IGDR"]{
         width: 8rem;
         margin: auto;
     }
 
-    div.main img[alt*="IPR"]{
+    img[alt*="IPR"]{
         width: 7rem;
         margin: auto;
     }
@@ -99,25 +118,25 @@ div.main {
     /* --- small --- */
     @media only screen and (max-width: 640px) {
 
-        div.main .row {
+        .row {
             display: block;
         }
  
-        div.main .column-img {
+        .column-img {
             width: 100%;
             text-align: right;
             margin: auto;
         }
         
-        div.main .column-img.portrait {
+        .column-txt {
+            float: flex;
+            width: 100%;
+        }
+
+        .few-words .column-img {
             width: 100%;
             text-align: center;
             margin: auto;
-        }
-
-        div.main .column-txt {
-            float: flex;
-            width: 100%;
         }
 
     }
@@ -125,30 +144,30 @@ div.main {
     /* --- medium + --- */
     @media only screen and (min-width: 641px) {
 
-        div.main .row {
+        .row {
             display: flex;
             align-items: center;
         }
-
-        div.main .row.expertise {
-            display: flex;
-            align-items: baseline;
-        }
         
-        div.main .column-img {
+        .column-img {
             display: flex;
             align-items: center;
             width: 25%;
         }
         
-        div.main .column-txt {
+        .column-txt {
             float: right;
             width: 75%;    
         }
 
-        div.main .column-txt.expertise {
+        .expertise .row {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .expertise .column-txt {
             float: left;
-            width: 33%;    
+            width: 50%;    
         }
 
     }

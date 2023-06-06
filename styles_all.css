@@ -40,9 +40,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: bold;
-    color: rgb(40, 40, 40);
+    color: rgb(50, 50, 50);
     margin: 0.5rem auto;
 }
 
@@ -54,23 +54,15 @@ h3 {
 }
 
 h4 {
-    font-size: 1rem;
-    font-weight: normal;
-    color: rgb(40, 40, 40);
-    margin: 0.5rem auto;
-}
-
-h5 {
     font-size: 0.9rem;
-    font-weight: normal;
-    font-style: italic;
-    color: rgb(80, 80, 80);
+    font-weight: bold;
+    color: rgb(100, 100, 100);
     margin: 0.5rem auto;
 }
 
 p {
     font-size: 0.9rem;
-    color: rgb(80, 80, 80);
+    color: rgb(100, 100, 100);
     text-align: justify;
     line-height: 1.25rem;
     margin: 0.5rem auto;
@@ -82,11 +74,6 @@ hr.hr1 {
 }
 
 hr.hr2 {
-    border: none;
-    border-top: 1px dotted rgb(160, 160, 160);
-}
-
-hr.hr3 {
     border: none;
     border-top: 1px dotted rgb(160, 160, 160);
 }
