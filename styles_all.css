@@ -56,8 +56,15 @@ h3 {
 h4 {
     font-size: 1rem;
     font-weight: normal;
+    color: rgb(40, 40, 40);
+    margin: 0.5rem auto;
+}
+
+h5 {
+    font-size: 0.9rem;
+    font-weight: normal;
     font-style: italic;
-    color: rgb(55, 100, 150);
+    color: rgb(80, 80, 80);
     margin: 0.5rem auto;
 }
 
@@ -75,6 +82,11 @@ hr.hr1 {
 }
 
 hr.hr2 {
+    border: none;
+    border-top: 1px dotted rgb(160, 160, 160);
+}
+
+hr.hr3 {
     border: none;
     border-top: 1px dotted rgb(160, 160, 160);
 }

@@ -12,10 +12,10 @@ h3 {
 }
 
 h4 {
-    padding-left: 1rem;
+    padding-left: 3rem;
 }
 
-h4.inline-right{
+h5.inline-right{
     float: right;
     margin: 0.25rem auto;
 }
@@ -41,6 +41,10 @@ hr.hr2 {
     margin-bottom: 1rem;
 }
 
+hr.hr3 {
+    margin-left: 3rem;
+}
+
 /* #region - main rules */
 
 div.main {
@@ -59,12 +63,15 @@ div.main {
 
 /* Image "Expertise" */
 
-    div.row.expertise img{
-        height: 1.5rem;
-        padding: 0.25rem;
-        margin: auto;
+    .expertise-icons{
         display: flex;
-        float: right;
+        justify-content: flex-start;
+        padding-left: 3rem;
+    }
+
+    .expertise-icons img {
+        height: 1.5rem;
+        margin-right: 0.5rem;
     }
 
 /* Image "Professional experience" */
