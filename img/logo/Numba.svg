@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#17A3DD;}
+	.st1{fill:none;}
+	.st2{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<path class="st0" d="M174.8,161.9c0,0,76.7-56.5,45.6-93.1c-36-42.4-136.9,47.5-148,29.3S162,36,173,28.6c1.2-0.8,1.5-2.3,1.2-4.1
+		l11.6-1.4l-7.3-3.7l1.9-7.3l-8.4,6.6c-3.2-5.7-8.6-11.8-11.6-14c-11-7.3-31.1-5.5-60.3,9.1S3.1,74.3,37.8,125.5
+		C68.8,171.1,158,92.7,173,105.3c12.8,11-85.8,78.5-85.8,78.5s41.9,0,42,0c-7.3,18.3-42,71.3-42,71.3l126.5-91.4
+		C200.4,161.8,174.8,161.9,174.8,161.9z M140.4,10.4c4.5-0.3,8.4,3.2,8.7,7.6c0.3,4.5-3.2,8.4-7.6,8.7c-4.5,0.3-8.4-3.2-8.7-7.6
+		C132.4,14.6,135.9,10.7,140.4,10.4z"/>
+</g>
+<rect class="st1" width="256" height="256"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="157.0321" y1="35.5182" x2="157.0321" y2="35.5182" gradientTransform="matrix(1 0 0 1 0 -12)">
+	<stop  offset="0" style="stop-color:#243746"/>
+	<stop  offset="9.525055e-02" style="stop-color:#233543"/>
+	<stop  offset="0.1897" style="stop-color:#1C2C37"/>
+	<stop  offset="0.2839" style="stop-color:#131C23"/>
+	<stop  offset="0.3773" style="stop-color:#040607"/>
+	<stop  offset="0.3961" style="stop-color:#020203"/>
+</linearGradient>
+<path class="st2" d="M157,23.5"/>
+</svg>
