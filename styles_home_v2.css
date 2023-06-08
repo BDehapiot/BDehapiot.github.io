@@ -31,6 +31,13 @@
     font-style: italic;
 }
 
+/* Images */
+
+img[alt*="portrait"]{
+    width: 10rem;
+    margin: auto; 
+}
+
 /* #endregion */
 
 /* --- medium + --- */
@@ -39,6 +46,7 @@
     .row {
         display: flex;
         align-items: baseline;
+        padding: 1rem 0;
     }
 
     main div[class*="column"] {
@@ -47,9 +55,12 @@
 
     .few-words .column-img {
         width: 25%;
+        text-align: center;
+        margin: auto;
     }
 
     .few-words .column-txt {
+        float: flex;
         width: 75%;
     }
 
