@@ -68,51 +68,24 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
         align-items: baseline;
     }
 
-    /* ----------------------------- */
+    /* ------ */
 
     .overview .row{
         display: flex;
-        align-items: center;
+        border: 0.5px solid rgb(40, 40, 40);
     }
 
     .overview .column-left{
-        width: 25%;
-        text-align: center;
-        margin: auto;
+        width: 33%;
+        border: 0.5px solid rgb(40, 40, 40);
     }
 
-    .overview .column-right-top{
-        float: flex;
-        width: 75%;
-        padding-left: 1rem;
+    .overview .column-right{
+        width: 66%;
+        border: 0.5px solid rgb(40, 40, 40);
     }
 
-    .overview .row-bottom{
-        display: flex;
-        align-items: baseline;
-    }
-
-    .overview .column-right-bottom{
-        width: 50%;
-        margin: 0;
-    } 
-
-    .overview .contact-item{
-        display: inline-flex;
-        
-    }
-
-    .overview .contact-item img{
-        padding: 0 0.5rem 0 0;
-        
-    }
-
-    .overview .contact-item p{
-        white-space: nowrap;
-        
-    }
-
-    /* ----------------------------- */
+    /* ------ */
 
     .expertise .column{
         width: 33%;
@@ -139,12 +112,6 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
     
     .row{
         display: block;
-    }
-
-    .overview .column-left{
-        width: 100%;
-        text-align: center;
-        margin: auto;
     }
 
     .experiences .column-img{
