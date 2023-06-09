@@ -58,11 +58,6 @@ img[alt*="ETH"]{width: 7rem; margin: auto;}
 img[alt*="AMU"]{width: 7rem; margin: auto;}
 img[alt*="Rennes1"]{width: 7rem; margin: auto;}
 
-/* img[alt*="CENTURI"]{width: 7rem; margin: 0.5rem auto;} */
-/* img[alt*="IBDM"]{width: 6rem; margin: 0.5rem auto;} */
-/* img[alt*="IGDR"]{width: 7rem; margin: 0.5rem auto;} */
-/* img[alt*="IPR"]{width: 6rem; margin: 0.5rem auto;} */
-
 /* #endregion */
 
 /* --- medium + --- */
@@ -72,6 +67,8 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
         display: flex;
         align-items: baseline;
     }
+
+    /* ----------------------------- */
 
     .overview .row{
         display: flex;
@@ -90,12 +87,14 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
         padding-left: 1rem;
     }
 
-    /* ----------------------------- */
+    .overview .row-bottom{
+        display: flex;
+        align-items: baseline;
+    }
 
     .overview .column-right-bottom{
         width: 33%;
         margin: 0;
-        
     } 
 
     .overview .contact-item{
@@ -112,33 +111,6 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
         white-space: nowrap;
         
     }
-
-
-    /* .contact .row{
-        display:inline-flex;
-        display:inline-block;
-        flex-wrap:wrap;
-        margin: 0;
-    }
-
-    .contact .row-item{
-        display:flex;
-        justify-content: left;
-    }
-
-    .contact .column{
-        width: 33%;
-        margin: 0;
-    }
-
-    .contact img{
-        padding: 0 0.5rem 0 0;
-    }
-
-    .contact p{
-        white-space: nowrap;
-        padding: 0 0.5rem 0 0;
-    } */
 
     /* ----------------------------- */
 
