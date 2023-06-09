@@ -95,18 +95,22 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
     .overview .column-right-bottom{
         width: 33%;
         margin: 0;
+        
     } 
 
     .overview .contact-item{
         display: inline-flex;
+        
     }
 
     .overview .contact-item img{
         padding: 0 0.5rem 0 0;
+        
     }
 
     .overview .contact-item p{
         white-space: nowrap;
+        
     }
 
 
