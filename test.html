@@ -4,10 +4,6 @@
         <link rel="stylesheet" href="styles_all.css" type="text/css">
 
         <style>
-            
-            /* .row {
-                display: flex;
-            }    */
 
             .row-top {
                 display: flex;
@@ -15,24 +11,37 @@
                 align-items: center;
             }
 
-            .contact{
+            .row-top .contact{
                 margin: 0 2rem;
             }
 
-            .contact .item{
+            .row-top .contact .item{
                 display: flex;
             }
 
-            .contact .item p{
+            .row-top .contact .item p{
                 white-space: nowrap;
                 margin: 0.25rem 0.5rem;
             }
 
-            .column{
-                width: 50%;
+            .row-bottom {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .row-bottom .activities{
+                width: 70%;
+            }
+
+            .row-bottom .logo{
+                width: 30%;
             }
 
             img[alt*="Portrait"] {width: 10rem;}
+            img[alt*="ETH"] {width: 10rem;}
+            img[alt*="ScopeM"] {width: 10rem;}
+            img[alt*="IDA"] {width: 10rem; margin-top: 1rem;}
             img[alt*="Location"] {width: 1.5rem;}
             img[alt*="Mail"] {width: 1.5rem;}
             img[alt*="Fix"] {width: 1.5rem;}
@@ -45,9 +54,11 @@
 
         <div class="row-top">
 
-            <img src="img/logo/ETH.svg" alt="Portrait" />
+            <div class="portrait">
 
-            <img src="img/portrait/BD_CENTURI-2021_mod-crop_empty.jpg" alt="Portrait" />
+                <img src="img/portrait/BD_CENTURI-2021_mod-crop_empty.jpg" alt="Portrait" />
+
+            </div>
 
             <div class="contact">
             
@@ -88,7 +99,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row-mid">
 
             <h3>In a few words</h3>
             <p>
@@ -101,41 +112,53 @@
 
         </div>
 
-        <div class="row">
+        <div class="row-bottom">
+
+            <div class="activities">
                 
-            <h3>Activities</h3>
+                <h3>Activities</h3>
 
-            <p>
-                I am currently working for the Scientific Center for Optical and Electron Microscopy (or ScopeM) at 
-                the ETH Zürich. 
-            </p>
+                <p>
+                    I am currently working for the Scientific Center for Optical and Electron Microscopy (or ScopeM) at 
+                    the ETH Zürich. 
+                </p>
 
-            <h4>Consulting</h4>
-            <p>
-                Provide help and advices on image-data analysis related issues.<br />
-                Please fill the following form to reserve a slot and discuss with me.<br />
-                Consultations are free of charge and open to everyone.<br />
-            </p>
+                <h4>Consulting</h4>
+                <p>
+                    Provide help and advices on image-data analysis related issues.<br />
+                    Please fill the following form to reserve a slot and discuss with me.<br />
+                    Consultations are free of charge and open to everyone.<br />
+                </p>
 
-            <h4>Project</h4>
-            <p>
-                - Long-term projects support.<br />
-                - Expertise in data management, analysis and visualisation.<br />
-                - Long-term service are charged, please contact for more details.
-            </p>
+                <h4>Project</h4>
+                <p>
+                    - Long-term projects support.<br />
+                    - Expertise in data management, analysis and visualisation.<br />
+                    - Long-term service are charged, please contact for more details.
+                </p>
 
-            <h4>RD</h4>
-            <p>
-                - Develop solutions for common image-data analysis problems.<br />
-                - Automated data acquisition.<br />
-            </p>
+                <h4>RD</h4>
+                <p>
+                    - Develop solutions for common image-data analysis problems.<br />
+                    - Automated data acquisition.<br />
+                </p>
 
-            <h4>Teaching</h4>
-            <p>
-                - Basic/advanced image analysis courses.<br />
-                - Software and programming hands-on workshops.<br />
-                - Summer school. 
-            </p>
+                <h4>Teaching</h4>
+                <p>
+                    - Basic/advanced image analysis courses.<br />
+                    - Software and programming hands-on workshops.<br />
+                    - Summer school. 
+                </p>
+
+            </div>
+
+            <div class="logo">
+
+                <img src="img/logo/ETH.svg" alt="ETH" />
+                <img src="img/logo/ScopeM.png" alt="ScopeM" />
+                <img src="img/logo/IDA.svg" alt="IDA" />
+
+            </div>
 
         </div>
         
