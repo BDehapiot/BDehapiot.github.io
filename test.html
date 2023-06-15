@@ -1,21 +1,30 @@
 <html>
     <head>
 
+        <!-- <link rel="stylesheet" href="styles_all.css" type="text/css"> -->
+
         <style>       
 
             .row-top {
-                    display: flex;
-                    align-items: center;
-                }             
+                display: flex;
+                align-items: center;
+            }             
 
             .row-bottom {
                 display: flex;
             }    
 
             .row-bottom .activities {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;   
+                    border: 0.5px solid rgb(40, 40, 40);
             }
             
             .row-bottom .contact {
+                width: 30%;
+                    border: 0.5px solid rgb(40, 40, 40);
             }
 
             .row-bottom .contact .item{
@@ -27,7 +36,7 @@
                 margin: 0.25rem 0.5rem;
             }
 
-            .row-bottom .logo {
+            .row-bottom .contact .logo {
                 display: flex;
                 flex-direction: column;    
                 align-self: center;
@@ -37,10 +46,18 @@
                 .row-top {
                     flex-direction: column;
                 } 
+
+                .row-bottom {
+                    flex-direction: column;
+                } 
             }
 
             @media only screen and (min-width: 641px) { 
                 .row-top {                   
+                    flex-direction: row;
+                }
+
+                .row-bottom {                   
                     flex-direction: row;
                 }
             }
@@ -93,37 +110,29 @@
 
                     <h3>Activities</h3>
                     
-                    <ul>
-                        <li>
-                            <h4>Consulting</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </li>
-                        <li>
-                            <h4>Projects</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </p>
-                            
-                        </li>
-                        <li>
-                            <h4>R&D</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </p>
-                        </li>
-                        <li>
-                            <h4>Teaching</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </p>
-                        </li>
-                    </ul>
+                    <h4>Consulting</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+
+                    <h4>Projects</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+                    
+                    <h4>R&D</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
+
+                    <h4>Teaching</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </p>
 
                 </div>
 
@@ -172,7 +181,7 @@
     
                     </div>
 
-                    <div class="item-logo">
+                    <div class="logo">
                         
                         <img src="img/logo/ETH.svg" alt="ETH" />
                         <img src="img/logo/ScopeM.png" alt="ScopeM" />
