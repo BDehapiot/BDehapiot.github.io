@@ -37,11 +37,17 @@
 
     .overview .column-contact {
         display: flex;
+        flex-direction: column;
     } 
 
     .overview .column-contact .items{
         display: flex;
         flex-direction: column;
+    }
+
+    .overview .column-contact .title{
+        display: flex;
+        align-self: start;
     }
 
     .overview .column-contact .item{
@@ -86,12 +92,12 @@
         } 
         
         .overview .column-activities {
-            width: 66%;
+            width: 66.66%;
         } 
 
         .overview .column-contact {
-            justify-content: center;
-            width: 33%;
+            align-items: center;
+            width: 33.33%;
         } 
 
     }
@@ -138,7 +144,7 @@
     @media only screen and (min-width: 641px) {
 
         .expertise .column{
-            width: 33%;
+            width: 33.33%;
         }
 
     }
