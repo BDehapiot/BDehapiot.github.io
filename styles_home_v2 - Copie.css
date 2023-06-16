@@ -1,11 +1,7 @@
 /* #region - general rules */
 
-main div[class*="column"] {
+main div[class*="column"]{
     margin-left: 1rem;
-}
-
-.few-words .row {
-    margin: 2rem 0;
 }
 
 .expertise h2{
@@ -40,11 +36,11 @@ main div[class*="column"] {
     color: inherit;
 }
 
-.experiences h2 {
+.experiences h2{
     display:inline-block;
 }
 
-.experiences h4 {
+.experiences h4{
     float: right;
     font-style: italic;
 }
@@ -62,116 +58,49 @@ img[alt*="ETH"]{width: 7rem; margin: auto;}
 img[alt*="AMU"]{width: 7rem; margin: auto;}
 img[alt*="Rennes1"]{width: 7rem; margin: auto;}
 
-/* img[alt*="CENTURI"]{width: 7rem; margin: 0.5rem auto;} */
-/* img[alt*="IBDM"]{width: 6rem; margin: 0.5rem auto;} */
-/* img[alt*="IGDR"]{width: 7rem; margin: 0.5rem auto;} */
-/* img[alt*="IPR"]{width: 6rem; margin: 0.5rem auto;} */
-
 /* #endregion */
 
 /* --- medium + --- */
 @media only screen and (min-width: 641px) {
     
-    .row {
+    .row{
         display: flex;
         align-items: baseline;
     }
 
-    .few-words .row {
+    /* ------ */
+
+    .overview .row{
+        display: flex;
+        border: 0.5px solid rgb(40, 40, 40);
+    }
+
+    .overview .column-left{
+        width: 33%;
+        border: 0.5px solid rgb(40, 40, 40);
+    }
+
+    .overview .column-right{
+        width: 66%;
+        border: 0.5px solid rgb(40, 40, 40);
+    }
+
+    /* ------ */
+
+    .expertise .column{
+        width: 33%;
+    }
+
+    .experiences .row{
         display: flex;
         align-items: center;
     }
 
-    .few-words .column-img {
-        width: 25%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .few-words .column-txt {
-        float: flex;
-        width: 75%;
-        padding-left: 1rem;
-    }
-
-    /* ----------------------------- */
-
-    .contact .row{
-        /* display:inline-flex; */
-        display:inline-block;
-        flex-wrap:wrap;
-        margin: 0;
-    }
-
-    .contact .row-item{
-        display:flex;
-        justify-content: left;
-    }
-
-    .contact .column{
-        width: 33%;
-        margin: 0;
-    }
-
-    .contact img{
-        padding: 0 0.5rem 0 0;
-    }
-
-    .contact p{
-        white-space: nowrap;
-        padding: 0 0.5rem 0 0;
-    }
-
-    /* .contact .row{
-        display:flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        margin: 0;
-    } */
-
-
-
-    /* .contact .row-item{
-        display:inline-flex;
-        flex-wrap:wrap;
-        align-items: center;
-    } */
-
-
-
-    /* .contact .column{
-        display:inline-flex;
-        flex-wrap:wrap;
-        margin: 0;
-        width: 33%;
-    } */
-
-
-
-    /* .contact img{
-        margin-left: 1rem;
-    } */
-
-    /* .contact p{
-        margin-left: 1rem;
-    } */
-
-    /* ----------------------------- */
-
-    .expertise .column {
-        width: 33%;
-    }
-
-    .experiences .row {
-        display: flex;
-        align-items: center;
-    }
-
-    .experiences .column-txt {
+    .experiences .column-txt{
         width: 75%;
     }
 
-    .experiences .column-img {
+    .experiences .column-img{
         width: 25%;
         text-align: center;
     }
@@ -181,17 +110,11 @@ img[alt*="Rennes1"]{width: 7rem; margin: auto;}
 /* --- small --- */
 @media only screen and (max-width: 640px) {
     
-    .row {
+    .row{
         display: block;
     }
 
-    .few-words .column-img {
-        width: 100%;
-        text-align: center;
-        margin: auto;
-    }
-
-    .experiences .column-img {
+    .experiences .column-img{
         text-align: right;
     }
 }
