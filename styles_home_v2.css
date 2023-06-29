@@ -38,6 +38,7 @@
     .overview .column-contact {
         display: flex;
         flex-direction: column;
+        border-left: 2px solid #000000;
     } 
 
     .overview .column-contact .items{
