@@ -79,11 +79,17 @@ p {
     text-align: center;
     padding: 0.1rem 0.5rem;
     margin: 0.15rem 0;
+    box-shadow: 
+        inset -2px -2px 5px rgba(0, 0, 0, 0.25), 
+        inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
 .button:hover{
     background-color: rgb(55, 100, 150);
     color: white;
+    box-shadow: 
+        inset -2px -2px 5px rgba(0, 0, 0, 0.25), 
+        inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
 .hr1 {
@@ -157,6 +163,7 @@ nav ul {
     overflow: hidden;
     padding-inline-start: 0;
     margin: 0;
+    
 }
 
 nav li {
