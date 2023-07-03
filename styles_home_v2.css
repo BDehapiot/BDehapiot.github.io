@@ -35,6 +35,17 @@
         display: flex;
     }  
 
+    .overview .column-activities .item{
+        background-color: rgb(240, 240, 240);
+        /* border: 0.5px solid rgb(40, 40, 40); */
+        border-radius: 0.5rem;
+        padding: 0.25rem 1rem;
+        margin: 0.5rem 0;
+        /* box-shadow: 
+        inset -5px -5px 5px rgba(0, 0, 0, 0.25), 
+        inset -5px -5px 5px rgba(255, 255, 255, 0.2); */
+    }
+
     .overview .column-contact {
         display: flex;
         flex-direction: column;
