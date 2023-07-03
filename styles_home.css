@@ -1,153 +1,181 @@
-/* #region - general rules */
+/* #region -- general -- */
 
-/* Titles and paragraphs*/
-
-    h2.inline-left{
-        display:inline-block;
-        margin-left: 0;
-    }
-
-    h4.inline-right{
-        float: right;
-        font-style: italic;
-    }
-
-    h4.inline-left{
-        display:inline-block;
-    }
-
-    .expertise p{
-        display:inline-block;
-        border: 0.5px solid rgb(40, 40, 40);
-        border-radius: 5px;
-        background-color: white;
-        text-align: center;
-        padding: 0 0.5rem;
-        margin: 0 0 0.25rem;
-    }
-
-    .experiences h3, .experiences p {
+    main div[class*="column"]{
         margin-left: 1rem;
     }
-    
-/* Lines */
 
-    hr {
-        margin-bottom: 1rem;
-    }
-
-/* #region - main rules */
-
-    .main {
-        padding: 1rem 0.5rem 0rem 0.5rem;
-        max-width: 960px;
-        box-sizing: border-box;
-        margin: auto;
-    }
-
-/* Image portrait */
-
-    img[alt*="portrait"]{
-        width: 10rem;
-        margin: auto; 
-    }
-
-/* Image "Expertise" */
-
-    .expertise-icons{
-        float:right;
-    }
-
-    .expertise-icons img {
-        height: 1.4rem;
-        padding-left: 0.25rem;
-    }
-
-/* Image "Professional experience" */
-
-    img[alt*="ETH"]{width: 9rem; margin: auto;}
-    img[alt*="CENTURI"]{width: 9rem; margin: auto;}
-    img[alt*="IBDM"]{width: 8rem; margin: auto;}
-    img[alt*="IGDR"]{width: 8rem; margin: auto;}
-    img[alt*="IPR"]{width: 7rem; margin: auto;}
-
-    /* --- small --- */
     @media only screen and (max-width: 640px) {
 
-        .row {
+        .row{
             display: block;
-        }
- 
-        .column-img {
-            width: 100%;
-            text-align: right;
-            margin: auto;
-        }
-        
-        .column-txt {
-            float: flex;
-            width: 100%;
-        }
-
-        .few-words .column-img {
-            width: 100%;
-            text-align: center;
-            margin: auto;
-        }
-
-        .expertise .item {
-            border: 0.5px solid rgb(40, 40, 40);
-            border-radius: 5px;
-            background-color: rgb(240, 240, 240);
-            padding: 0.5rem 1rem;
-            margin: 0.5rem 0;
         }
 
     }
 
-    /* --- medium + --- */
     @media only screen and (min-width: 641px) {
 
-        .row {
-            display: flex;
-            align-items: center;
-        }
-        
-        .column-img {
-            display: flex;
-            align-items: center;
-            width: 25%;
-        }
-        
-        .column-txt {
-            float: right;
-            width: 75%;
-        }
-
-        .expertise .row {
+        .row{
             display: flex;
             align-items: baseline;
-            margin-left: 1rem;
-        }
-
-        .expertise .column {
-            float: left;
-            width: 33%;
-            margin-left: 1rem;
-        }
-
-        .expertise .item {
-            border: 0.5px solid rgb(40, 40, 40);
-            border-radius: 5px;
-            background-color: rgb(240, 240, 240);
-            padding: 0.5rem 1rem;
-            margin: 0.5rem 0;
-        }
-        
-        .experiences .row {
-            margin-left: 1rem;
         }
 
     }
 
 /* #endregion */
+
+/* #region -- overview -- */
+
+    .overview .row-top {
+        display: flex;
+        align-items: center;
+    }  
+
+    .overview .row-bottom {
+        display: flex;
+    }  
+
+    .overview .column-activities .item{
+        background-color: rgb(240, 240, 240);
+        border-radius: 0.5rem;
+        padding: 0.25rem 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .overview .column-contact {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .overview .column-contact .items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview .column-contact .title{
+        display: flex;
+        align-self: start;
+    }
+
+    .overview .column-contact .item{
+        display: flex;
+        margin: 0.5rem 0;
+    }
+
+    .overview .column-contact .item p{
+        white-space: nowrap;
+        margin: 0 0.5rem;
+    }   
+
+    .overview .column-contact .item .button{
+        margin: 0 0 0 0.25rem;
+    }
+
+    img[alt*="Portrait"] {width: 10rem;}
+    img[alt*="Mail"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt*="Fix"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt*="Mobile"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt*="Web"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt*="Building"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt*="Location"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt*="Portrait"]{width: 10rem; margin: auto;}
+    
+    @media only screen and (max-width: 640px) {
+
+        .overview .row-top, .row-bottom {
+            flex-direction: column;
+        }  
+
+    }
+
+    @media only screen and (min-width: 641px) {
+
+        .overview .row-top, .row-bottom {
+            flex-direction: row;
+        } 
+        
+        .overview .column-activities {
+            width: 66.66%;
+        } 
+
+        .overview .column-contact {
+            align-items: center;
+            width: 33.33%;
+        } 
+
+    }
+
+/* #endregion */
+
+/* #region -- expertise -- */
+
+    .expertise h2{
+        margin-left: 1rem;
+    }
+
+    .expertise .item{
+        background-color: rgb(240, 240, 240);
+        border-radius: 0.5rem;
+        padding: 0.25rem 1rem;
+        margin: 0.5rem 0;
+    }
+
+    @media only screen and (max-width: 640px) {
+    }
+
+    @media only screen and (min-width: 641px) {
+
+        .expertise .column{
+            width: 33.33%;
+        }
+
+    }
+
+/* #endregion */
+
+/* #region -- experiences -- */
+
+    /* .experiences h2{
+        display:inline-block;
+    }
+
+    .experiences h4{
+        float: right;
+        font-style: italic;
+    }
+
+    img[alt*="ETH"]{width: 7rem; margin: auto;}
+    img[alt*="ScopeM"] {width: 7rem;}
+    img[alt*="IDA"] {width: 7rem; margin-top: 0.75rem;}
+    img[alt*="CENTURI"]{width: 7rem; margin: auto;}
+    img[alt*="IBDM"]{width: 7rem; margin: auto;}
+    img[alt*="AMU"]{width: 7rem; margin: auto;}
+    img[alt*="Rennes1"]{width: 7rem; margin: auto;}
+
+    @media only screen and (max-width: 640px) {
+
+        .experiences .column-img{
+            text-align: right;
+        }
+
+    }
+
+    @media only screen and (min-width: 641px) {
+
+        .experiences .row{
+            display: flex;
+            align-items: center;
+        }
+
+        .experiences .column-txt{
+            width: 75%;
+        }
+
+        .experiences .column-img{
+            width: 25%;
+            text-align: center;
+        }
+
+    } */
+
+/* #endregion */
+

@@ -30,6 +30,17 @@ html {
     margin: auto;
 }
 
+main{
+    padding: 0 2rem;
+    max-width: 960px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+main h1{
+    margin: 1rem 0 0 0;
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -183,21 +194,6 @@ nav a {
 nav a:hover {
     background-color: rgb(55, 100, 150);
     color: white;
-}
-
-/* #endregion */
-
-/* #region - main rules */
-
-main{
-    padding: 0 2rem;
-    max-width: 960px;
-    box-sizing: border-box;
-    margin: auto;
-}
-
-main h1{
-    margin: 1rem 0 0 0;
 }
 
 /* #endregion */

@@ -2,431 +2,420 @@
 
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_all.css" type="text/css">
-    <link rel="stylesheet" href="styles_home.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+    <head>
 
-<body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles_all.css" type="text/css">
+        <link rel="stylesheet" href="styles_home.css" type="text/css">
+        <link rel="stylesheet" href="styles_cv.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script> 
+            $(function(){
+            $("#header").load("header.html"); 
+            });
+        </script>
 
-    <header>
+    </head>
 
-        <div class="row">
+    <body>
 
-            <div class="column-title">
+        <div id="header"></div>
 
-                <h1>Benoit Dehapiot</h1>
-                <h2>Bio-image data analyst</h2>
+        <main>
 
-            </div>
+            <!-- overview -->
 
-            <div class="column-icons">
+            <div class="overview">
 
-                <div class="row-icons">
+                <!-- <h1>Overview</h1>
+                <hr class="hr1"> -->
 
-                    <img class="icons" src="img/logo/Twitter_gray.svg" alt="Twitter"
-                        onmouseover="this.src='img/logo/Twitter_blue.svg';"
-                        onmouseout="this.src='img/logo/Twitter_gray.svg';" />
-                    <img class="icons" src="img/logo/Scholar_gray.svg" alt="Scholar"
-                        onmouseover="this.src='img/logo/Scholar_blue.svg';"
-                        onmouseout="this.src='img/logo/Scholar_gray.svg';" />
-                    <img class="icons" src="img/logo/Github_gray.svg" alt="Github"
-                        onmouseover="this.src='img/logo/Github_blue.svg';"
-                        onmouseout="this.src='img/logo/Github_gray.svg';" />
-                    <img class="icons" src="img/logo/Linkedin_gray.svg" alt="Linkedin"
-                        onmouseover="this.src='img/logo/Linkedin_blue.svg';"
-                        onmouseout="this.src='img/logo/Linkedin_gray.svg';" />
+                <div class="row-top">
 
-                </div>
+                    <div class="column-img">
 
-            </div>
+                        <img src="img/portrait/BD_CENTURI-2021_mod-crop_empty.jpg" alt="Portrait" />
 
-        </div>
-
-    </header>
-
-    <nav>
-
-        <ul>
-
-            <li><a href="home.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="cv.html">CV</a></li>
-
-        </ul>
-
-    </nav>
-
-    <div class="main few-words">
-
-        <h1>In a few words</h1>
-        <hr class="hr1">
-
-        <div class="row">
-
-            <div class="column-img">
-
-                <img src="img/portrait/BD_CENTURI-2021_mod-crop_xxx.jpg" alt="portrait" />
-
-            </div>
-
-            <div class="column-txt">
-
-                <p>
-                    I am a biologist by training with a solid experience in image processing and data analysis. During
-                    my career, I notably studied how actin filaments and their dynamics influence larger scale processes
-                    in various in vivo and in vitro models. My research has allowed me to develop a keen interest in
-                    quantifying complex processes through microscopy. This encouraged me to fully dedicate myself to
-                    bio-image data analysis and join service platforms to support researchers and students.
-                    I'm currently working for the Turing Centre for Living Systems in Marseille where I provide
-                    expertise and teaching to the local scientific community.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="main expertise">
-
-        <h1>Expertise</h1>
-        <hr class="hr1">
-
-        <h2 class="inline-left">Computing</h2>
-
-        <div class="row">
-
-            <div class="column">
-
-                <h3>Programming</h3>
-
-                <div class="item">
-
-                    <h4 class="inline-left">OS</h4> 
-                    <div class="expertise-icons">
-                        <img src="img/logo/Windows11.svg" alt="Windows11" />
-                        <img src="img/logo/Linux.svg" alt="Linux" />
                     </div>
 
-                    <div>
-                        <p>Windows</p>
-                        <p>Linux</p>
+                    <div class="column-txt">
+
+                        <h3>About me</h3>
+                        <p>
+                            I am a biologist by training with a solid experience in image processing
+                            and data analysis. During my career, I notably studied how actin filaments 
+                            and their dynamics influence larger scale processes in various in vivo and
+                            in vitro models. My research has allowed me to develop a keen interest in
+                            quantifying complex processes through microscopy. This encouraged me to 
+                            fully dedicate myself to bio-image data analysis and join service platforms
+                            to support academic and industrial research.
+                        </p>
+
                     </div>
 
                 </div>
 
-                <div class="item">
+                <div class="row-bottom">
 
-                    <h4 class="inline-left">Coding languages</h4> 
-                    <div class="expertise-icons">
-                        <img src="img/logo/Python_notext_noshadow.svg" alt="Python" />
-                        <img src="img/logo/Matlab.png" alt="Matlab" />
-                        <img src="img/logo/ImageJ.png" alt="ImageJ" />
+                    <div class="column-activities">
+
+                        <div class="items">
+
+                            <h3>Activities</h3>
+                            
+                            <div class="item">
+
+                                <h4>Consulting</h4>
+                                <p>
+                                    Provide help and advices on image-data analysis issues.
+                                    Our consultation meetings, or "Image Clinics", are free of charge and open to everyone. 
+                                    Book your slot using our calendly form and follow the guidelines.
+                                </p>
+                                <a href="https://calendly.com/ida-scopem-image-clinics/image-clinics-image-analysis-1/" class="button">Booking</a>
+                                <a href="https://www.let-your-data-speak.com/#image-clinics" class="button">Guidelines</a>
+
+                            </div>
+
+                            <div class="item">
+
+                                <h4>Projects</h4>
+                                <p>
+                                    Support long-term research projects providing expertise in image-data management,
+                                    analysis and visualization. 
+                                </p>
+
+                            </div>
+                            
+                                <div class="item">
+
+                                <h4>R&D</h4>
+                                <p>
+                                    Develop custom image pipeline to perform common image analysis and automated acquisition tasks. 
+                                </p>
+
+                            </div>
+
+                            <div class="item">
+
+                                <h4>Teaching</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                </p>
+
+                            </div>
+
                     </div>
 
-                    <div>
-                        <p>Python</p>
-                        <p>Matlab</p>
-                        <p>ImageJ Macro</p>
+                    </div>
+
+                    <div class="column-contact">
+
+                        <div class="items">
+
+                            <div class="title">
+
+                                <h3>Contact</h3>
+            
+                            </div>
+
+                            <div class="item">
+
+                                <img src="img/logo/Mail.svg" alt="Mail" />
+                                <p>
+                                    bdehapiot@ethz.ch<br/>
+                                    b.dehapiot@gmail.com
+                                </p>
+            
+                            </div>
+
+                            <div class="item">
+
+                                <img src="img/logo/Fix.svg" alt="Fix" />
+                                <p>+41 44 633 40 12</p>
+            
+                            </div>
+
+                            <div class="item">
+
+                                <img src="img/logo/Mobile.svg" alt="Mobile" />
+                                <p>+41 78 233 68 79</p>
+            
+                            </div>
+
+                            <div class="item">
+            
+                                <img src="img/logo/Web.svg" alt="Web" />
+                                <a href="https://scopem.ethz.ch/" class="button">ScopeM</a>
+                                <a href="https://www.let-your-data-speak.com/" class="button">IDA</a>
+                                        
+                            </div>
+            
+                            <div class="item">
+            
+                                <img src="img/logo/Building.svg" alt="Building" />
+                                <p>
+                                    ETH Zürich -ScopeM<br />
+                                    HPM C 52.2<br />
+                                </p>
+            
+                            </div>
+
+                            <div class="item">
+            
+                                <img src="img/logo/Location.svg" alt="Location" />
+                                <p>
+                                    Otto-​Stern-Weg 3<br />
+                                    8093 Zürich, Switzerland
+                                </p>
+            
+                            </div>
+
+                        </div>                       
+
                     </div>
 
                 </div>
-
-                <div class="item">
-
-                    <h4 class="inline-left">Coding tools</h4> 
-                    <div class="expertise-icons">
-                        <img src="img/logo/Git_notext.svg" alt="Git" />
-                        <img src="img/logo/github.svg" alt="Github" />
-                        <img src="img/logo/Conda_lite.svg" alt="Conda" />
-                        <img src="img/logo/Mamba.svg" alt="Mamba" />
-                    </div> 
-
-                    <div>
-                        <p>Git</p>
-                        <p>GitHub</p> 
-                        <p>Conda</p>
-                        <p>Mamba</p>
-                    </div>
-
-                </div>
-
-                <div class="item">
-                    
-                    <h4 class="inline-left">Web development</h4>
-                    <div class="expertise-icons">
-                        <img src="img/logo/HTML_notext.svg" alt="HTML" />
-                        <img src="img/logo/CSS_notext.svg" alt="CSS" />
-                    </div>  
-
-                    <div>
-                        <p>HTML</p>
-                        <p>CSS</p> 
-                    </div>
-
-                </div>
-
+            
             </div>
 
-            <div class="column">
+            <!-- expertise -->
 
-                <h3>Python libraries</h3>
+            <div class="expertise">
+
+                <h1>Expertise</h1>
+                <hr class="hr1">
+
+                <h2>Computing</h2>
                 
-                <div class="item">
+                <div class="row">
 
-                    <h4 class="inline-left">Data</h4>
-                    <div class="expertise-icons">
-                        <img src="img/logo/Numpy_lite.svg" alt="Numpy" />
-                        <img src="img/logo/Pandas_lite.svg" alt="Pandas" />
-                        <img src="img/logo/Scipy_lite.svg" alt="Scipy" />
-                        <img src="img/logo/Matplotlib_lite.svg" alt="Matplotlib" />
-                    </div> 
-                    
-                    <div>
-                        <p>Numpy</p>
-                        <p>Pandas</p>
-                        <p>Scipy</p>
-                        <p>Matplotlib</p>
+                    <div class="column">
+
+                        <h3>Programming</h3>
+
+                        <div class="item">
+                            <h4>OS</h4>
+                            <a href="https://www.microsoft.com/" class="button">Windows</a>
+                            <a href="https://www.linux.org/" class="button">Linux</a>
+                        </div>
+
+                        <div class="item">
+                            <h4>Languages</h4>
+                            <a href="https://www.python.org/" class="button">Python</a>
+                            <a href="https://www.mathworks.com/" class="button">Matlab</a>
+                            <a href="https://imagej.nih.gov/ij/developer/macro/functions.html" class="button">ImageJ macro</a>
+                        </div>
+
+                        <div class="item">
+                            <h4>Tools</h4>
+                            <a href="https://git-scm.com/" class="button">Git</a>
+                            <a href="https://github.com/" class="button">GitHub</a>
+                            <a href="https://docs.conda.io/" class="button">Conda</a>
+                            <a href="https://mamba.readthedocs.io/" class="button">Mamba</a>
+                        </div>
+
+                        <div class="item">
+                            <h4>Web</h4>
+                            <a href="https://www.w3schools.com/html/" class="button">HTML</a>
+                            <a href="https://www.w3schools.com/css/" class="button">CSS</a>
+                        </div>
+
                     </div>
 
-                </div>
+                    <div class="column">
 
-                <div class="item">
+                        <h3>Python libraries</h3>
 
-                    <h4 class="inline-left">Performance</h4>
-                    <div class="expertise-icons">
-                        <img src="img/logo/Joblib.svg" alt="Joblib" />
-                        <img src="img/logo/Numba.svg" alt="Numba" />
-                    </div>  
+                        <div class="item">
+                            <h4>Data</h4>
+                            <a href="https://numpy.org/" class="button">Numpy</a>
+                            <a href="https://pandas.pydata.org/" class="button">Pandas</a>
+                            <a href="https://scipy.org/" class="button">Scipy</a>
+                            <a href="https://matplotlib.org/" class="button">Matplotlib</a>
+                        </div>
 
-                    <div>
-                        <p>Joblib</p>
-                        <p>Numba</p>
+                        <div class="item">
+                            <h4>Images</h4>
+                            <a href="https://scikit-image.org/" class="button">Scikit-image</a>
+                            <a href="https://opencv.org/" class="button">OpenCV</a>
+                            <a href="https://napari.org/" class="button">Napari</a>
+                        </div>
+
+                        <div class="item">
+                            <h4>AI</h4>
+                            <a href="https://scikit-learn.org/" class="button">Scikit-learn</a>
+                            <a href="https://www.tensorflow.org/" class="button">TensorFlow</a>
+                        </div>
+
+                        <div class="item">
+                            <h4>Misc</h4>
+                            <a href="https://joblib.readthedocs.io/" class="button">Joblib</a>
+                            <a href="https://numba.pydata.org/" class="button">Numba</a>
+                        </div>
+                            
                     </div>
 
-                </div>
+                    <div class="column">
 
-                <div class="item">
+                        <h3>Software</h3>
 
-                    <h4 class="inline-left">Image processing</h4> 
-                    <div class="expertise-icons">
-                        <img src="img/logo/ScikitImage.png" alt="Scikit-image" />
-                        <img src="img/logo/OpenCV_lite.png" alt="OpenCV" />
-                        <img src="img/logo/Napari.png" alt="Napari" />
-                    </div>  
+                        <div class="item">
+                            <h4>IDE</h4>
+                            <a href="https://code.visualstudio.com/" class="button">VSCode</a>
+                            <a href="https://www.spyder-ide.org/" class="button">Spyder</a>
+                            <a href="https://jupyter.org/" class="button">Jupyter Notebook</a>
+                        </div>
 
-                    <div>
-                        <p>Scikit-image</p>
-                        <p>OpenCV</p>
-                        <p>Napari</p>
-                    </div>
-
-                </div>
-
-                <div class="item">
-
-                    <h4 class="inline-left">Machine learning</h4>
-                    <div class="expertise-icons">
-                        <img src="img/logo/ScikitLearn.svg" alt="Scikit-learn" />
-                        <img src="img/logo/TensorFlow_lite.svg" alt="TensorFlow" />
-                    </div>
-
-                    <div>
-                        <p>Scikit-learn</p>
-                        <p>TensorFlow</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="column">
-
-                <h3>Software</h3>
-                
-                <div class="item">
-
-                    <h4 class="inline-left">IDE</h4>
-                    <div class="expertise-icons">
-                        <img src="img/logo/VSCode.svg" alt="VSCode" />
-                        <img src="img/logo/Spyder.svg" alt="Spyder" />
-                        <img src="img/logo/Jupyter.png" alt="Jupyter" />
-                    </div>
-                    
-                    <div>
-                        <p>VSCode</p>
-                        <p>Spyder</p>
-                        <p>Jupyter Notebook</p>
-                    </div>
-
-                </div>
-
-                <div class="item">
-                    
-                    <h4 class="inline-left">Image processing</h4>
-                    
-                    <div>
-                        <p>Fiji</p>
+                        <div class="item">
+                            <h4>Images</h4>
+                            <a href="https://imagej.net/" class="button">ImageJ/Fiji</a>
+                        </div>
+                            
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
+            <!-- experiences -->
 
-    </div>
+            <div class="experiences">
 
-    <div class="main experiences">
+                <h1>Professional experiences</h1>
+                <hr class="hr1">
 
-        <h1>Professional experiences</h1>
-        <hr class="hr1">
+                <div class="row">
 
+                    <div class="column-txt">
 
-        <div class="row">
+                        <h2>Image data analyst</h2>
+                        <h4>Since 2023</h4>
+                        <h3>ScopeM platform, ETH Zürich, Switzerland</h3>
+                        <p>Description</p>
 
-            <div class="column-txt">
+                    </div>
 
-                <h2 class="inline-left">Image data analyst</h2>
-                <h4 class="inline-right">Since 2023</h4>
-                <h3> ScopeM optical and electron microscopy platform, ETH Zürich, Switzerland</h3>
+                    <div class="column-img">
 
-                <p>
-                    NEED TO BE UPDATED | Working as a research engineer in a multidisciplinary platform gathering hardware and software
-                    specialists at the service of the scientific community of the Turing Center for Living Systems in
-                    Marseille.
-                </p>
+                        <img src="img/logo/ETH.svg" alt="ETH"/>
 
-            </div>
+                    </div>
 
-            <div class="column-img">
-
-                <img src="img/logo/ETH.svg" alt="ETH" />
-
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="column-txt">
+                </div>
 
                 <hr class="hr2">
 
-                <h2 class="inline-left">Image data analyst</h2>
-                <h4 class="inline-right">2019-2022</h4>
-                <h3>CENTURI multi-engineering platform, Marseille, France</h3>
+                <div class="row">
 
-                <p>
-                    Working as a research engineer in a multidisciplinary platform gathering hardware and software
-                    specialists at the service of the scientific community of the Turing Center for Living Systems in
-                    Marseille.
-                </p>
+                    <div class="column-txt">
 
-            </div>
+                        <h2>Image data analyst</h2>
+                        <h4>2019-2022</h4>
+                        <h3>CENTURI multi-engineering platform, Marseille, France</h3>
+                        <p>                    
+                            Working as a research engineer in a multidisciplinary platform gathering hardware and software
+                            specialists at the service of the scientific community of the Turing Center for Living Systems in
+                            Marseille.
+                        </p>
 
-            <div class="column-img">
+                    </div>
 
-                <img src="img/logo/CENTURI-horizontal.svg" alt="CENTURI" />
+                    <div class="column-img">
 
-            </div>
+                        <!-- <img src="img/logo/AMU.svg" alt="AMU"/> -->
+                        <img src="img/logo/CENTURI-horizontal.svg" alt="CENTURI"/>
 
-        </div>
+                    </div>
 
-        <div class="row">
-
-            <div class="column-txt">
-
-                <hr class="hr2">
-
-                <h2 class="inline-left">Post-doctoral researcher</h2>
-                <h4 class="inline-right">2014-2018</h4>
-                <h3>Pr Thomas Lecuit’s lab, IBDM, Marseille, France</h3>
-
-                <p>
-                    Studying how medio-apical F-actin networks influence MyoII-induced
-                    pulsatile contractility of embryonic <i>Drosophila</i> epithelial cells.
-                </p>
-
-            </div>
-
-            <div class="column-img">
-
-                <img src="img/logo/IBDM.svg" alt="IBDM" />
-
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="column-txt">
+                </div>
 
                 <hr class="hr2">
 
-                <h2 class="inline-left">PhD student</h2>
-                <h4 class="inline-right">2010-2014</h4>
-                <h3>Dr Guillaume Halet’s lab, IGDR, Rennes, France</h3>
+                <div class="row">
 
-                <p>
-                    Studying asymmetric divisions of mouse oocytes, aiming to understand how
-                    cortical polarization underlies spontaneous symmetry breaking.
-                </p>
+                    <div class="column-txt">
 
-            </div>
+                        <h2>Postdoctoral researcher</h2>
+                        <h4>2014-2018</h4>
+                        <h3>Pr Thomas Lecuit’s lab, IBDM, Marseille, France</h3>
+                        <p>
+                            Studying how medio-apical F-actin networks influence MyoII-induced
+                            pulsatile contractility of embryonic <i>Drosophila</i> epithelial cells.
+                        </p>
 
-            <div class="column-img">
+                    </div>
 
-                <img src="img/logo/IGDR.svg" alt="IGDR" />
+                    <div class="column-img">
 
-            </div>
+                        <!-- <img src="img/logo/AMU.svg" alt="AMU"/> -->
+                        <img src="img/logo/IBDM.svg" alt="IBDM"/>
 
-        </div>
+                    </div>
 
-        <div class="row">
-
-            <div class="column-txt">
+                </div>
 
                 <hr class="hr2">
 
-                <h2 class="inline-left">Master internship</h2>
-                <h4 class="inline-right">2010 (6 months)</h4>
-                <h3>Dr Zoher Gueroui’s lab, IPR, Rennes, France</h3>
+                <div class="row">
 
-                <p>
-                    Studying the effect of confinement on the dynamics of F-actin networks
-                    contained in encapsulated <i>Xenopus</i> meiotic cell extracts.
-                </p>
+                    <div class="column-txt">
+
+                        <h2>PhD student</h2>
+                        <h4>2010-2014</h4>
+                        <h3>Dr Guillaume Halet’s lab, IGDR, Rennes, France</h3>
+                        <p>
+                            Studying asymmetric divisions of mouse oocytes, aiming to understand how
+                            cortical polarization underlies spontaneous symmetry breaking.
+                        </p>
+
+                    </div>
+
+                    <div class="column-img">
+
+                        <img src="img/logo/Rennes1.svg" alt="Rennes1"/>
+                        <!-- <img src="img/logo/IGDR.svg" alt="IGDR"/> -->
+
+                    </div>
+
+                </div>
+
+                <hr class="hr2">
+
+                <div class="row">
+
+                    <div class="column-txt">
+
+                        <h2>Master internship</h2>
+                        <h4>2010 (6 months)</h4>
+                        <h3>Dr Zoher Gueroui’s lab, IPR, Rennes, France</h3>
+                        <p>
+                            Studying the effect of confinement on the dynamics of F-actin networks
+                            contained in encapsulated <i>Xenopus</i> meiotic cell extracts.
+                        </p>
+
+                    </div>
+
+                    <div class="column-img">
+
+                        <img src="img/logo/Rennes1.svg" alt="Rennes1"/>
+                        <!-- <img src="img/logo/IPR.svg" alt="IPR"/> -->
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="column-img">
+        </main>
 
-                <img src="img/logo/IPR.svg" alt="IPR" />
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="main publication">
-
-        <h1>Publication</h1>
-        <hr class="hr1">
-        </hr>
-
-    </div>
-
-</body>
+    </body>
 
 </html>

@@ -1,0 +1,94 @@
+/* #region -- general -- */
+
+main div[class*="column"]{
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .row{
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 641px) {
+
+    .row{
+        display: flex;
+        align-items: baseline;
+    }
+
+}
+
+/* #endregion */
+
+/* #region -- experiences -- */
+
+.experiences h2{
+    display:inline-block;
+}
+
+.experiences h4{
+    float: right;
+    font-style: italic;
+}
+
+img[alt*="ETH"]{width: 7rem; margin: auto;}
+img[alt*="CENTURI"]{width: 7rem; margin: auto;}
+img[alt*="IBDM"]{width: 7rem; margin: auto;}
+img[alt*="AMU"]{width: 7rem; margin: auto;}
+img[alt*="Rennes1"]{width: 7rem; margin: auto;}
+
+@media only screen and (max-width: 640px) {
+
+    .experiences .column-img{
+        text-align: right;
+    }
+
+}
+
+@media only screen and (min-width: 641px) {
+
+    .experiences .row{
+        display: flex;
+        align-items: center;
+    }
+
+    .experiences .column-txt{
+        width: 75%;
+    }
+
+    .experiences .column-img{
+        width: 25%;
+        text-align: center;
+    }
+
+}
+
+/* #endregion */
+
+/* #region -- publications -- */
+
+.publications .name{
+    color: rgb(55, 100, 150);
+    /* color: black; */
+    /* font-style: italic; */
+    font-weight: bold;
+}
+
+.publications .journal{
+    /* color: rgb(55, 100, 150); */
+    color: black;
+    /* font-style: italic; */
+    font-weight: bold;
+}
+
+.publications .year{
+    /* color: rgb(55, 100, 150); */
+    /* color: black; */
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* #endregion */
