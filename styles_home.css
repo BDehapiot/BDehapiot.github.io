@@ -70,14 +70,14 @@
         margin: 0 0 0 0.25rem;
     }
 
-    img[alt*="Portrait"] {width: 10rem;}
-    img[alt*="Mail"] {width: 1.5rem; filter:contrast(50%)}
-    img[alt*="Fix"] {width: 1.5rem; filter:contrast(50%)}
-    img[alt*="Mobile"] {width: 1.5rem; filter:contrast(50%)}
-    img[alt*="Web"] {width: 1.5rem; filter:contrast(50%)}
-    img[alt*="Building"] {width: 1.5rem; filter:contrast(50%)}
-    img[alt*="Location"] {width: 1.5rem; filter:contrast(50%)}
-    img[alt*="Portrait"]{width: 10rem; margin: auto;}
+    img[alt="Portrait"] {width: 10rem;}
+    img[alt="Mail"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt="Fix"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt="Mobile"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt="Web"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt="Building"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt="Location"] {width: 1.5rem; filter:contrast(50%)}
+    img[alt="Portrait"]{width: 10rem; margin: auto;}
     
     @media only screen and (max-width: 640px) {
 
