@@ -88,16 +88,16 @@ img[alt="Rennes1"]{width: 7rem; margin: auto;}
 }
 
 .publications .journal{
-    /* color: rgb(55, 100, 150); */
+    color: rgb(55, 100, 150);
     /* color: black; */
-    /* font-style: italic; */
-    font-weight: bold;
+    font-style: italic;
+    /* font-weight: bold; */
 }
 
 .publications .year{
     /* color: rgb(55, 100, 150); */
     color: black;
-    font-style: italic;
+    /* font-style: italic; */
     /* font-weight: bold; */
 }
 
@@ -116,6 +116,15 @@ img[alt="Link"] {width: 1.5rem; filter:contrast(50%)}
         width: 50%;
     }
 
+}
+
+/* #endregion */
+
+/* #region -- publications -- */
+
+.teaching .header h3, .teaching .header p{
+    display:inline-block;
+    /* margin-right: 5px; */
 }
 
 /* #endregion */
