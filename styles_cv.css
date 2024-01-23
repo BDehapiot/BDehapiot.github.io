@@ -120,6 +120,32 @@ img[alt="Link"] {width: 1.5rem; filter:contrast(50%)}
 
 /* #endregion */
 
+/* #region -- expertise -- */
+
+.expertise h2{
+    margin-left: 1rem;
+}
+
+.expertise .item{
+    background-color: rgb(240, 240, 240);
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (min-width: 641px) {
+
+    .expertise .column{
+        width: 33.33%;
+    }
+
+}
+
+/* #endregion */
+
 /* #region -- publications -- */
 
 .teaching .header h3, .teaching .header p{
