@@ -23,7 +23,7 @@ main div[class*="column"]{
 
 /* #endregion */
 
-/* #region -- experiences -- */
+/* #region -- experiences -------------------------------------------------- */
 
 .experiences h2{
     display:inline-block;
@@ -68,7 +68,7 @@ img[alt="Rennes1"]{width: 7rem; margin: auto;}
 
 /* #endregion */
 
-/* #region -- publications -- */
+/* #region -- publications ------------------------------------------------- */
 
 .publications p{
     /* text-align: left; */
@@ -120,15 +120,15 @@ img[alt="Link"] {width: 1.5rem; filter:contrast(50%)}
 
 /* #endregion */
 
-/* #region -- expertise -- */
+/* #region -- expertise ---------------------------------------------------- */
 
 .expertise h2{
     margin-left: 1rem;
 }
 
 .expertise .item{
-    background-color: rgb(240, 240, 240);
-    border-radius: 0.5rem;
+    /* background-color: rgb(240, 240, 240); */
+    /* border-radius: 0.5rem; */
     padding: 0.25rem 1rem;
     margin: 0.5rem 0;
 }
@@ -146,7 +146,7 @@ img[alt="Link"] {width: 1.5rem; filter:contrast(50%)}
 
 /* #endregion */
 
-/* #region -- publications -- */
+/* #region -- teaching ----------------------------------------------------- */
 
 .teaching .header h3, .teaching .header p{
     display:inline-block;
