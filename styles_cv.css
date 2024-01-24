@@ -126,6 +126,15 @@ img[alt="Link"] {width: 1.5rem; filter:contrast(50%)}
     margin-left: 1rem;
 }
 
+.expertise h3{
+    margin-left: 1rem;
+}
+
+.expertise .column{
+    background-color: rgb(240, 240, 240);
+    border-radius: 0.5rem;
+}
+
 .expertise .item{
     /* background-color: rgb(240, 240, 240); */
     /* border-radius: 0.5rem; */
