@@ -131,7 +131,7 @@ img[alt="Link"] {width: 1.5rem; filter:contrast(50%)}
 }
 
 .expertise .column{
-    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(240, 240, 240); */
     border-radius: 0.5rem;
 }
 
